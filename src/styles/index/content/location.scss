@@ -1,0 +1,190 @@
+@import "common/mixins";
+@import "common/variables";
+@import "common/fonts";  
+ 
+// =======================================================
+//                  block-location                           
+// =======================================================
+.location{ 
+  &__body{
+     position: relative;
+     @include jucc();
+     width: 100%;
+     height: 100%;
+     padding: 0% 0% 0% 0%;  
+  }
+//  --------ширина шапки--------
+  &__head{
+    position: relative;
+    flex: 0 1 100%;  
+    padding: 0% 0% 0% 0%;
+  }
+// ----------ширина контента-----
+  &__content {  
+position: relative;
+flex: 0 1 100%;
+padding: 6% 0% 0% 0%; 
+}
+  &__content-low {  
+flex: 0 1 100%;
+padding: 4% 0% 0% 0%;  
+}
+
+&_about{
+& .location__body{
+  padding: 4.8% 0% 0% 0%;  
+}
+}
+
+  }
+
+// ----------------шапка блока---------------------
+.location-head{
+ width: 100%;
+  height: 100%;
+  &__body {
+    position: relative;
+    @include jucs();  
+    text-align: left;
+    width: 100%;
+    height: 100%;
+    flex: 0 1 100%;
+    padding: 0% 0% 0% 0%;
+  }
+
+  &__title {
+    position: relative;
+    z-index: 2;
+    background-color: #BEE1FF;
+    @include Text-Style-18;   
+    line-height: 0.8;  
+    flex: 0 1 100%;
+    padding: 0% 0% 0% 0%; 
+
+  }
+}
+// ---------управление единичными блоками---------------------
+.content-location{
+  &__body {  
+position: relative;
+@include jucb(); 
+@include alis(); 
+
+@media screen and (max-width: 1440px) {
+padding: 0% 0% 0% 0%;
+ 
+}
+      @media screen and (max-width: 1080px) {
+       padding: 0% 5% 0% 5%; 
+      }
+}
+// ----ширина единичного блока-----
+&__item {  
+flex: 0 1 25%; 
+@media screen and (max-width: 1220px) {
+ flex: 0 1 30%; 
+} 
+@media screen and (max-width: 1080px) {
+ flex: 0 1 100%;
+margin: 0% 0% 5% 0%;
+}
+
+}
+}
+// =====единичный блок=========
+.tiny-location {
+  width: 100%;
+  height: 100%;
+  &__body {
+    position: relative;
+    @include jucb(); 
+        @include alis();  
+    text-align: left;
+    width: 100%;
+    height: 100%;
+    @media screen and (max-width: 442px) {
+  flex: 0 1 100%;
+ @include jucc(); 
+ background: red;
+ } 
+
+  }
+  &__icon {
+    position: relative;
+    z-index: 2;
+    background-color: #246eb9;
+    text-align: center;
+    flex: 0 1 50px;  
+ } 
+  &__text {
+    position: relative;
+    z-index: 2;
+      background-color: #FF9419;
+      @include Text-Style-17;
+      text-transform: lowercase;
+      flex: 0 1 80%;
+      padding: 0% 0% 0% 3%;   
+      big{
+        text-transform: uppercase;
+      }
+         @media screen and (max-width: 442px) {
+ flex: 0 1 100%;
+  padding: 3% 0% 0% 0%; 
+text-align: center;  
+}
+  }
+}
+
+// ----------------
+.content-location-low{
+  &__body{
+  @include jucb();
+    
+  }
+  &__item{
+  flex: 0 1 50%;  
+  &:last-child{
+    flex: 0 1 50%; 
+    @media screen and (max-width: 442px) {
+ flex: 0 1 100%;
+} 
+  }  
+@media screen and (max-width: 442px) {
+ flex: 0 1 100%;
+}
+  }
+}
+ 
+.tiny-location-low{ 
+  &__body{
+  
+  }
+  &__text{
+  @include Text-Style-19;  
+  p{
+    padding: 0% 5% 5% 0%;    
+  }
+  }
+}
+
+
+// ---------------------
+.location-content-img{ 
+// width: 100%;
+// height: 100%;
+  &__body{
+ width: 100%;
+  padding: 60% 0% 0% 0%;       
+  position: relative;
+  
+  }
+  // padding: 2.6% 0% 0% 0%;
+  // width: 100%;
+  // height: 100%; 
+  // img{
+  // width: 100%;  
+  // }         
+}
+// =======================================================
+//               end of   block-location                           
+// =======================================================

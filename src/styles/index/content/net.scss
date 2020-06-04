@@ -1,0 +1,84 @@
+.net{position: relative;width: 100%;height: 100%;z-index: 1000;
+ position: absolute;left: 0%;top: 0;}
+.net-line {position: absolute;width: 100%;height: 1px;background-color: #000;left: 0%;z-index: 1000;
+  &__line1 { height: 3px;background-color: red;   top: 716px; }
+  &__line2 {height: 3px;  
+    background-color: red;   top: 843px;
+    } 
+  &__line3 { 
+                     top: 727px;
+  }
+  &__line4 {   
+                     top: 773px;
+  }
+  // &__line5 { 
+  //                    top: px;
+  // }
+  // &__line6 { 
+  //                    top: px; 
+  // }
+  // &__line7 { 
+  //                    top: px; 
+  // }
+  // &__line8 { 
+  //                    top: px; 
+  // }
+  // &__line9 { 
+  //                    top: px; 
+  // }
+  // &__line10 { 
+  //                    top: px; 
+  // }
+  // &__line11 { 
+  //                    top: px; 
+  // }
+  // &__line12 { 
+  //                    top: px; 
+  // }
+
+}
+.net-column{position: absolute;width: 1px; height: 100%; background-color: blue;top: 0;padding: 200% 0% 0% 0%;  z-index: 1000;
+  &__col1{                        left: 135px; 
+    width: 3px;
+    background-color: red;} 
+  &__col2{                       left: 1359px;  
+    width: 3px;
+    background-color: red;
+}
+  &__col3{
+                                  left: 135px;    
+  }
+  &__col4{
+                                  left: 190px; 
+  }
+  &__col5{
+                                  left: 207px;
+  }
+  &__col6{
+                                  left: 504px;
+  }
+  &__col7{
+                                  left: 575px;
+  }
+  &__col8{
+                                  left: 783px;
+  }
+  &__col9{
+                                  left: 1242px;
+  }
+//   &__col10{
+//                                   left: px;
+//   }
+//   &__col11{
+//                                   left: px;
+//   }
+//   &__col12{
+//                                   left: px;
+//   }
+//   &__col13{
+//                                   left: px;
+//   }
+  // &__col14{
+  //                                 left: px;
+  // }
+}

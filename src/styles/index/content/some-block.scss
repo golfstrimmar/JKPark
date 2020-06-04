@@ -1,0 +1,1739 @@
+@import "common/mixins";
+@import "common/variables";
+
+.blockimg {
+  position: relative;
+  text-align: center;
+
+  &__body {
+  }
+
+  &__item {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+// ---------------------------------------------------------
+// ++++++++++++++++++++++ blockkk  +++++++++++++++++++++++++++++++++++
+// ---------------------------------------------------------
+.blockkk {
+  background-color: #bb8830;
+  outline: 2px solid red;
+
+  &__body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    background-color: #5c4317;
+    text-align: center;
+    @include flex();
+    flex-wrap: wrap;
+  }
+  &__header {
+    flex: 0 1 100%;
+  }
+  &__plaza {
+    flex: 0 1 100%;
+  }
+  &__button {
+    flex: 0 1 30%;
+  }
+}
+
+// ------ шапка--------------------
+.header-blockkk {
+  &__body {
+  }
+  &__icon {
+    background-color: #bee1ff;
+  }
+
+  &__title {
+    background-color: #3dbbff;
+  }
+
+  &__text {
+    background-color: #246eb9;
+  }
+}
+
+// -----контейнер для единичны блоков-----------------
+.plaza-blockkk {
+  &__body {
+    background-color: #ff9419;
+    @include flex();
+    width: 100%;
+    height: 100%;
+  }
+  &__item {
+    outline: 2px solid aqua;
+    flex: 0 1 100%;
+    @media screen and (max-width: 600px) {
+      flex: 0 1 100%;
+    }
+    &_duble {
+      flex: 0 1 100%;
+      @media screen and (max-width: 600px) {
+        flex: 0 1 100%;
+      }
+    }
+  }
+}
+// ---------- единичный блок---------------------------
+.item-plaza-blockkk {
+  background-color: #193549;
+  &__body {
+    @include jucc();
+    flex-wrap: wrap;
+  }
+  &__item {
+    flex: 0 1 100%;
+
+    &_icon {
+      background-color: #bee1ff;
+    }
+    &_title {
+      background-color: #9e9e9e;
+
+      flex: 0 1 100%;
+      font-family: Lobster-Regular;
+      font-size: 15px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.67;
+      letter-spacing: normal;
+      text-align: left;
+    }
+    &_text {
+      background-color: #b29c69;
+      font-family: Lobster-Regular;
+      font-size: 15px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.67;
+      letter-spacing: normal;
+      text-align: left;
+    }
+    &_button {
+    }
+  }
+}
+// ----------двойной единичный блок ---------------------------
+.item-plaza-blockkk-duble {
+  &__body {
+    width: 100%;
+    height: 100%;
+    @include jucc();
+  }
+  &__left {
+    flex: 0 1 80%;
+    @media screen and (max-width: 600px) {
+      flex: 0 1 100%;
+    }
+  }
+  &__right {
+    flex: 0 1 20%;
+  }
+}
+
+.right-blockkk-duble {
+  outline: 2px solid #a6afff;
+  &__body {
+    width: 100%;
+    height: 100%;
+    @include jucc();
+  }
+  &__head {
+    background-color: #6e6e6e;
+    flex: 0 1 100%;
+
+    font-family: Lobster-Regular;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    text-align: left;
+  }
+  &__foot {
+    background-color: #856f3c;
+    flex: 0 1 100%;
+
+    font-family: Lobster-Regular;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    text-align: left;
+  }
+}
+
+// ---------------------------------------------
+.button-item-plaza-blockkk,
+.button-left-item-plaza-blockkk-duble {
+  outline: 2px solid #4d2342;
+  background-color: #3ad900;
+  @include anim(0.2s);
+  padding: 5px 0px 5px 0px;
+  &:hover {
+  }
+  span {
+    padding: 50px 10px;
+    font-family: Lobster-Regular;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    text-align: left;
+  }
+}
+
+.button-blockkk {
+  outline: 2px solid #4d2342;
+  background-color: #dc4c2f;
+  @include anim(0.2s);
+  margin: 0px auto;
+  span {
+    width: 100%;
+    height: 100%;
+    background-color: #9fff0f;
+    padding: 20px 10px;
+    font-family: Lobster-Regular;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    @include anim(0.2s);
+  }
+  &:hover {
+    span {
+      background-color: #64c29e;
+    }
+  }
+}
+
+
+
+
+// ====================================================
+//                  slider-top                             
+// ====================================================
+.container-top {
+  max-width: 950px;
+  // max-width: 100vw; 
+  margin: 0px auto;
+  outline: 4px solid #d24a4c;
+@media screen and (max-width: 960px) {
+  max-width: 100vw; 
+}
+
+}
+.slider-top {
+  width: 100%;height: 100%;
+  &__body {
+  @include jucc();
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  &__head {
+
+}
+&__arrows{ } 
+// ---------------------------------------------------------------
+//  !!!!!!!!!управление шириной содержимого  одного слайда!!!!!!!!!!!!!!!!!!
+&__slide {
+    // max-width: 200px;
+    max-width: 80%; 
+  }
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// ---------------------------------------------------------------- 
+ 
+&__slides {  
+outline: 2px solid #d4b584;
+
+}
+}
+
+// ---------------------------------------------------------------
+// !!!!!!!!!! управление расположением содержимого слайда!!!!!!!!!!!
+.slick-slide {
+  // text-align: left;
+  // text-align: center;
+  // text-align: right ;
+ background-color: #a9afb3; 
+  border: 2px solid #d4b584;
+  flex: 0 1 20%;
+}
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// ---------------------------------------------
+
+// =============шапка слайдера=============================
+.head-tiny{
+@include jucc();
+width: 100%;height: 100%;
+// !!!!!!!!!!!!!управление шириной шапки слайдера!!!!!!!!!!!!!!!!!!!!!!!
+&__body {  
+position: relative;
+text-align: left;
+@include flex();
+flex: 0 1 50%;  
+
+}
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+// &__bg { 
+// position: absolute;
+// top: 0;  
+// left: 0; 
+// width: 100%;
+// padding: 0px 0px 10% 0px;   
+// }
+ 
+&__icon {  
+position: relative;
+z-index: 2;
+flex: 0 1 100%;
+background-color: #246EB9; 
+}
+
+&__title {  
+position: relative;
+z-index: 2;
+flex: 0 1 100%;
+@include Text-Style-9;
+line-height: 1; 
+text-transform: uppercase;
+background-color: #9FFF0F;
+}
+
+&__text {  
+ position: relative;
+  z-index: 2;
+  flex: 0 1 100%;
+&_one {  
+background-color: red;
+flex: 0 1 100%;
+@include Text-Style-9;
+line-height: 1; 
+text-transform: uppercase;
+}
+&_two {  
+background-color: #193549;
+flex: 0 1 100%;
+@include Text-Style-9;
+line-height: 1; 
+text-transform: uppercase;
+}
+&_three {  
+background-color: #E628FF;
+flex: 0 1 100%;
+@include Text-Style-9;
+line-height: 1; 
+text-transform: uppercase;
+}
+&_four {  
+background-color: #FF9419;
+flex: 0 1 100%;
+@include Text-Style-9;
+line-height: 1; 
+text-transform: uppercase;
+}
+}
+
+&__button {  
+background-color: #d24a4c;
+position: relative;
+  z-index: 2;
+ flex: 0 1 100%; 
+a{
+  @include jucs(); 
+}   
+  span{
+background-color: #9e9e9e;
+@include Text-Style-9;
+line-height: 1; 
+text-transform: uppercase;
+}}}
+
+// ===========================================
+.slider-top-tiny {
+  width: 100%;height: 100%;
+  &__body {
+    position: relative;
+    text-align: left;
+    @include flex();
+  }
+  // &__bg {
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  // width: 100%;
+  // padding: 0px 0px 10% 0px;
+  // }
+
+  &__icon {
+    position: relative;
+    z-index: 2;
+    flex: 0 1 100%;
+    background-color: #246eb9;
+  }
+
+  &__title {
+   position: relative;
+    background-color: #9fff0f;
+    flex: 0 1 100%;
+    @include Text-Style-9;
+line-height: 1; 
+text-transform: uppercase;
+  }
+
+  &__text {
+    position: relative;
+    z-index: 2;
+    flex: 0 1 100%;
+    &_one {
+      background-color: red;
+flex: 0 1 100%;
+@include Text-Style-9;
+line-height: 1; 
+text-transform: uppercase;
+    }
+    &_two {
+      background-color: #193549;
+flex: 0 1 100%;
+@include Text-Style-9;
+line-height: 1; 
+text-transform: uppercase;
+    }
+    &_three {
+      background-color: #e628ff;
+flex: 0 1 100%;
+@include Text-Style-9;
+line-height: 1; 
+text-transform: uppercase;
+    }
+    &_four {
+      background-color: #ff9419;
+flex: 0 1 100%;
+@include Text-Style-9;
+line-height: 1; 
+text-transform: uppercase;
+    }
+  }
+
+  &__button {
+    background-color: #d24a4c;
+    position: relative;
+    z-index: 2;
+    flex: 0 1 100%;
+    a {
+      @include jucs();
+    }
+    span {
+      background-color: #9e9e9e;
+flex: 0 1 100%;
+@include Text-Style-9;
+line-height: 1; 
+text-transform: uppercase;
+    }
+  }
+}
+
+.arrows-slider-top{
+  // @include flex(); 
+  background-color: #246EB9; 
+  flex: 0 1 100%;
+  @include juca();
+  
+  &__arrow {  
+   position: absolute;
+width: 30px;
+height: 30px;
+top: 57%;
+  
+background-color: #D4B584; 
+  &_prev { 
+ left: -5%;
+}
+&_next {  
+right: -5%;
+}
+ }}
+
+ .slick-dots{
+      padding-inline-start: 0px !important;
+
+    position: absolute;
+width: 100%;
+height:100%;
+top :100%;
+transform: translate(5%,-12px);   
+// left: -34px;
+    @include flex();
+    z-index: 3;
+    @media screen and (max-width: 900px) {
+     left: 0;
+    } 
+}  
+
+.slick-dots li button{
+list-style: none;
+margin: 0px 5px 0px 0px;
+ font-family: LeagueSpartan;
+  font-size: 10px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: 4px;
+color: #000; 
+background-color: transparent;
+
+}
+.slick-dots li.slick-active{
+position: relative;
+ button{
+font-family: LeagueSpartan;
+  font-size: 10px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: 4px;
+  text-align: center;
+  color: #5da8ef;   
+  
+ }}
+ 
+// ====================================================
+//                  end of slider-top                      
+// ====================================================
+
+
+// =======================================================
+//                  block-trips                           
+// =======================================================
+.block-trips{ 
+  &__body{
+     position: relative;
+     @include jucc();
+     width: 100%;
+     height: 100%;
+  }
+//  --------ширина шапки--------
+  &__head{
+    position: relative;
+    flex: 0 1 80%;
+  }
+// ----------ширина контента-----
+  &__content {  
+position: relative;
+flex: 0 1 100%;
+
+}
+  }
+// ----------------шапка блока---------------------
+.tiny-trips-head{
+ width: 100%;
+  height: 100%;
+  &__body {
+    position: relative;
+    @include jucc(); 
+    text-align: left;
+    width: 100%;
+    height: 100%;
+    padding: 0% 0% 0% 0%;
+  }
+  &__icon {
+    position: relative;
+    z-index: 2;
+    flex: 0 1 100%;
+    background-color: #246eb9;
+    text-align: center;
+    padding: 0% 0% 0% 0%;
+  }
+  &__title {
+    position: relative;
+    z-index: 2;
+    background-color: #FF9419;
+    flex: 0 1 100%;
+    @include Text-Style-7;
+    line-height: 1;
+    text-transform: uppercase;
+    padding: 0% 0% 0% 0%; 
+  }
+  &__text {
+    position: relative;
+    z-index: 2;
+    &_one {
+      background-color: #9e9e9e;
+      @include Text-Style-7;
+      line-height: 1;
+      text-transform: uppercase;
+      flex: 0 1 100%;
+      padding: 0% 0% 0% 0%;
+    }
+    &_two {
+      background-color: #BEE1FF;
+      @include Text-Style-7;
+      line-height: 1;
+      text-transform: uppercase;
+      flex: 0 1 100%;
+      padding: 0% 0% 0% 0%;  
+    }
+    &_three {
+      background-color: #e74c45;
+      @include Text-Style-7;
+      line-height: 1; 
+      text-transform: uppercase;
+      flex: 0 1 100%;
+      padding: 0% 0% 0% 0%;  
+    }
+    &_four {
+      background-color: #9fff0f;
+      @include Text-Style-7;
+      line-height: 1;
+      text-transform: uppercase;
+      flex: 0 1 100%;
+      padding: 0% 0% 0% 0%;  
+    }
+  }
+  &__button {
+    background-color: #d24a4c;
+    position: relative;
+    z-index: 2;
+    flex: 0 1 100%;
+    padding: 0% 0% 0% 0%;
+    a {
+      @include jucs();
+      &:hover {
+        span {
+          color: #5da8ef;
+          @include anim(0.2s);
+        }
+      }
+    }
+    span {
+      background-color: #9e9e9e;
+      @include Text-Style-7;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+  }
+}
+
+// ---------управление единичными блоками---------------------
+.content-trips{
+  &__body {  
+position: relative;
+@include jucb();
+}
+// ----ширина единичного блока-----
+&__item {  
+flex: 0 1 20%;
+}
+}
+
+// =====единичный блок=========
+
+.tiny-trips{
+width: 100%;
+height: 100%;
+  &__body {  
+   position: relative;
+    @include jucc(); 
+    text-align: left;
+    width: 100%;
+    height: 100%;
+    padding: 0% 0% 0% 0%;
+
+}
+// &__bg { 
+// position: absolute;
+// top: 0;  
+// left: 0; 
+// width: 100%;
+// padding: 0px 0px 10% 0px;   
+// }
+ 
+&__icon {  
+ position: relative;
+    z-index: 2;
+    flex: 0 1 100%;
+    background-color: #246eb9;
+    text-align: center;
+    padding: 0% 0% 0% 0%;
+
+}
+
+&__title {  
+    position: relative;
+    z-index: 2;
+    background-color: #FF9419;
+    flex: 0 1 100%;
+    @include Text-Style-7;
+    line-height: 1;
+    text-transform: uppercase;
+    padding: 0% 0% 0% 0%; 
+
+}
+
+ &__text {
+    position: relative;
+    z-index: 2;
+    &_one {
+      background-color: #9fff0f;
+      @include Text-Style-7;
+      line-height: 1;
+      text-transform: uppercase;
+      flex: 0 1 100%;
+      padding: 0% 0% 0% 0%;
+    }
+    &_two {
+      background-color: #9e9e9e;
+      @include Text-Style-7;
+      line-height: 1;
+      text-transform: uppercase;
+      flex: 0 1 100%;
+      padding: 0% 0% 0% 0%;  
+    }
+    &_three {
+      background-color: #BEE1FF;
+      @include Text-Style-7;
+      line-height: 1;
+      text-transform: uppercase;
+      flex: 0 1 100%;
+      padding: 0% 0% 0% 0%;  
+    }
+    &_four {
+      background-color: #e74c45;
+      @include Text-Style-7;
+      line-height: 1;
+      text-transform: uppercase;
+      flex: 0 1 100%;
+      padding: 0% 0% 0% 0%;  
+    }
+  }
+  &__button {
+    background-color: #64c29e;
+    position: relative;
+    z-index: 2;
+    flex: 0 1 100%;
+    padding: 0% 0% 0% 0%;
+    a {
+      @include jucs();
+      &:hover {
+        span {
+          color: #5da8ef;
+          @include anim(0.2s);
+        }
+      }
+    }
+    span {
+      background-color: #9e9e9e;
+      @include Text-Style-7;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+  }
+}
+
+// =======================================================
+//               end of   block-trips                           
+// =======================================================
+
+
+// ==============tiny=====================
+// =======================================
+.tiny{
+width: 100%;
+height: 100%;
+  &__body {  
+position: relative;
+text-align: left;
+@include flex();
+
+}
+// &__bg { 
+// position: absolute;
+// top: 0;  
+// left: 0; 
+// width: 100%;
+// padding: 0px 0px 10% 0px;   
+// }
+ 
+&__icon {  
+position: relative;
+  z-index: 2;
+  flex: 0 1 100%;
+  background-color: #246EB9; 
+
+}
+
+&__title {  
+background-color: #9FFF0F;
+position: relative;
+z-index: 2;
+flex: 0 1 100%;
+@include Text-Style-7;
+line-height: 1; 
+text-transform: uppercase;
+}
+
+&__text {  
+position: relative;
+z-index: 2;
+background-color: #9FFF0F;
+flex: 0 1 100%;
+  
+&_one {  
+background-color: red;
+position: relative;
+z-index: 2;
+flex: 0 1 100%;
+@include Text-Style-7;
+line-height: 1; 
+text-transform: uppercase;
+}
+&_two {  
+background-color: #193549;
+position: relative;
+z-index: 2;
+flex: 0 1 100%;
+@include Text-Style-7;
+line-height: 1; 
+text-transform: uppercase;
+}
+&_three {  
+background-color: #E628FF;
+position: relative;
+z-index: 2;
+flex: 0 1 100%;
+@include Text-Style-7;
+line-height: 1; 
+text-transform: uppercase;
+}
+&_four {  
+background-color: #FF9419;
+position: relative;
+z-index: 2;
+flex: 0 1 100%;
+@include Text-Style-7;
+line-height: 1; 
+text-transform: uppercase;
+}
+}
+
+&__button {  
+background-color: #d24a4c;
+position: relative;
+z-index: 2;
+flex: 0 1 100%;
+
+a{
+  @include jucc();
+}   
+
+span{
+  background-color: #9e9e9e;
+  width: 100%;
+  height: 100%;
+  &:hover{
+    background-color: #d24a4c;
+  }
+@include Text-Style-7;
+line-height: 1; 
+text-transform: uppercase;
+}
+}
+
+}
+
+// =======================================================
+//               end of  tiny                           
+// =======================================================
+
+// ---------------------------------------------------------
+// ++++++++++++++++++++++  block-1 +++++++++++++++++++++++++++++++++++
+// ---------------------------------------------------------
+.block-1 {
+  
+  &__body {
+    @include flex();
+    outline: 2px solid #4e3710;
+  }
+  &__item {
+    flex: 0 1 20%;
+    outline: 2px solid #d4b584;
+  }
+}
+.item-block-1 {
+  &__body {
+    @include jucb();
+    background-color: red;
+  }
+  &__left {
+    background-color: #193549;
+    width: 80%;
+    flex: 0 1 80%;
+    height: 100%;
+  }
+  &__right {
+    background-color: #e628ff;
+    flex: 0 1 20%;
+
+    height: auto;
+    @include fdc();
+    &_high {
+      background-color: #193549;
+      flex: 0 1 20%;
+    }
+    &_low {
+      background-color: #e628ff;
+      flex: 0 1 80%;
+    }
+  }
+}
+// -------------------
+.left-block-1 {
+  &__body {
+    background-color: #4e3710;
+    @include flex();
+    position: relative;
+  }
+  &__bg {
+  
+  }
+  &__icon {
+    background-color: #246eb9;
+    flex: 0 1 100%;
+    z-index: 2;
+  }
+  &__title {
+    background-color: #64c29e;
+    flex: 0 1 100%;
+    z-index: 2;
+  }
+  &__text {
+    background-color: #848789;
+    flex: 0 1 100%;
+    z-index: 2;
+  }
+  &__button {
+    flex: 0 1 20%;
+    background-color: #9fff0f;
+    z-index: 2;
+    span {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+// ===========================================
+// ============== slider1 =====================
+// ============================================
+
+.slider1 {
+  &__body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    padding: 20px 0px 20px 0px;
+    background-color: #d24a4c;
+  }
+
+  &__header {
+  }
+  &__plaza {
+  }
+  &__arrows {
+  }
+}
+
+.header-slider1 {
+  text-align: center;
+  &__title {
+   position: relative;
+z-index: 2;
+flex: 0 1 100%;
+@include Text-Style-9;
+line-height: 1; 
+text-transform: uppercase;
+    background-color: #246eb9;
+  }
+
+  &__text {
+   position: relative;
+z-index: 2;
+flex: 0 1 100%;
+@include Text-Style-9;
+line-height: 1; 
+text-transform: uppercase;
+    background-color: #64c29e;
+  }
+}
+.plaza-slider1 {
+  background-color: #9e9e9e;
+  padding: 20px 0px 20px 0px;
+  &__body {
+  }
+
+  &__item {
+  }
+
+  &__arrows {
+    background-color: #282f35;
+  }
+}
+
+.item-plaza-slider1 {
+  &__body {
+    // @include fdc();
+    @include center();
+  }
+
+  &__img {
+    flex: 0 1 30%;
+    padding: 30% 0px 0px 0px;
+    border: 2px solid #d4b584;
+  }
+
+  &__text {
+    flex: 0 1 100%;
+    text-align: center;
+    background-color: #d24a4c;
+    padding: 20px 0px 0px 0px;
+    p {
+     position: relative;
+z-index: 2;
+flex: 0 1 100%;
+@include Text-Style-9;
+line-height: 1; 
+text-transform: uppercase;
+      background-color: #d24a4c;
+    }
+  }
+}
+.arrows-slider {
+  @include jucc();
+  span {
+    @include flex();
+    height: 30px;
+    font-size: 30px;
+    background-color: #b29c69;
+  }
+  &__prev {
+    flex: 0 1 20%;
+  }
+
+  &__next {
+    flex: 0 1 20%;
+  }
+}
+// ------------------------------------------------
+// +++++++++++++++++ link-1 +++++++++++++++++++++++++++++++
+// ------------------------------------------------
+
+.link-1 {
+  background-color: #9fff0f;
+  &__body {
+    background-color: #246eb9;
+    // flex: 0 1 30%;
+    @include flex();
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+  }
+
+  &__title {
+    color: red;
+    font-family: Lobster-Regular;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    text-align: left;
+  }
+
+  &__icon {
+  }
+  &__form {
+  }
+}
+
+.form-link-1 {
+  @include jucb();
+  @include alic();
+  background-color: #bee1ff;
+  width: 100%;
+  height: 100%;
+  &_input {
+    // padding: 10px 0px 10px 0px;
+    background-color: #826c41;
+    flex: 0 1 80%;
+    &:hover > span {
+      background-color: #fff;
+    }
+    input {
+      // background: transparent;
+      background-color: #9e9e9e;
+      font-family: Lobster-Regular;
+      font-size: 15px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.67;
+      letter-spacing: normal;
+      text-align: left;
+
+      width: 100%;
+      height: 100%;
+      text-indent: 20px;
+      padding: 10px 10px 10px 10px;
+      @include anim(0.2s);
+      border: 2px solid #d4b584;
+      &:hover {
+        background-color: #d4b584;
+      }
+    }
+  }
+  &_submit {
+    @include center();
+    @include anim(0.1s);
+    // text-align: center;
+    flex: 0 1 15%;
+    margin: 0px 0px 0px 10px;
+    padding: 10px 0px 10px 20px;
+    input {
+      font-family: Lobster-Regular;
+      font-size: 15px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.67;
+      letter-spacing: normal;
+      //  color: #246EB9;
+      width: 100%;
+      height: 100%;
+      padding: 10px 10px 10px 10px;
+      text-transform: uppercase;
+      border: 2px solid #d4b584;
+      @include anim(0.2s);
+      text-align: center;
+      &:hover {
+        background-color: #d4b584;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+// -----------------------------------------------
+// +++++++++++++++++++ link-2  +++++++++++++++++++
+// -----------------------------------------------
+.link-2 {
+  @include jucc();
+  @include alic(); 
+  &__body {
+    // border: 2px solid #d4b584; 
+    flex: 0 1 100%; 
+     @media screen and (max-width: 828px) {
+       flex: 0 1 100%; 
+       padding: 50px 20px 0px 20px;
+      }
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 50px 0px 0px 0px;
+  }
+  &__form {
+  }
+}
+
+.form-link-2 {
+  @include jucb();
+  @include alic();
+  @media screen and (max-width: 350px) {
+   @include jucc();
+  }
+  &__input {
+    width: 100%;
+    height: 100%;
+  
+    &_mail {
+      flex: 0 1 80%;
+      @media screen and (max-width: 828px) {
+       flex: 0 1 80%; 
+      }
+      @media screen and (max-width: 350px) {
+        flex: 0 1 100%;
+        margin: 0% 0% 10% 0%;
+      }
+      background-color: #64c29e;
+     input{  
+      border: none;
+      // border: 6px solid #222429;
+      width: 100%;
+      height: 50px; 
+      outline: none;
+      text-indent: 26px;
+      height: 50px;
+      background-color: #f5f5f5;
+      @include anim(0.2s);
+    //  @include Text-Style-6;
+      text-transform: uppercase;
+      line-height: 1;
+      &:hover {
+        background-color: #d4b584;
+      }
+     }
+    }
+  
+    &_submit {
+    @include center();
+    @include anim(0.1s);
+    background-color: #64c29e;
+    position: relative;
+    flex: 0 1 50px;
+
+    img {
+        position: absolute;
+        width: 10px; 
+        height: 18px;   
+        top: 50%; 
+        left: 50%;
+        transform: translate(-50%,-50%); 
+    }
+    input {
+      width: 100%;
+      height: 50px;
+      background-color: #5da8ef;
+      // border: 6px solid #222429;  
+      border: none;
+      @include anim(0.2s); 
+      &:hover {
+        background-color: #d4b584;
+      }
+  
+    }
+    
+  }
+  }
+}
+
+// =========================================================
+// ===================form main============================
+// ========================================================
+.link-main {
+  @include flex();
+  background-color: #282f35;
+  padding: 20px 0px 20px 0px;
+
+  &__body {
+    flex: 0 1 100%;
+    height: 100%;
+    background-color: #9fff0f;
+  }
+
+  &__forma {
+  }
+
+  &__text {
+    a {
+      span {
+        font-family: Lobster-Regular;
+        font-size: 12px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.19;
+        letter-spacing: 2.12px;
+      }
+    }
+  }
+}
+
+.forma-main {
+  &__body {
+    padding: 20px 10px 20px 10px;
+    background-color: #9e9e9e;
+    @include jucc();
+  }
+
+  &__input {
+    padding: 10px 0px 10px 0px;
+    font-family: Lobster-Regular;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.19;
+    letter-spacing: 2.12px;
+    @include anim(0.2s);
+    // text-align: center;
+    @include alic();
+    border: 2px solid #d4b584;
+    flex: 0 1 100%;
+    background-color: #64c29e;
+    label {
+      background-color: #ff9419;
+    }
+    input {
+      padding: 10px 0px 10px 5px;
+      width: 100%;
+      height: 100%;
+      @include anim(0.2s);
+    }
+    &:hover {
+      input {
+        background-color: #dedece;
+      }
+      textarea {
+        background-color: #dedece;
+      }
+    }
+
+    textarea {
+      padding: 0px 0px 0px 5px;
+      width: 100%;
+      height: 100%;
+      @include anim(0.2s);
+    }
+
+    &_name {
+    }
+    &_pass {
+      margin: 10px 0px 0px 0px;
+    }
+    &_check {
+      @include fdc();
+      background-color: #ff9419;
+      input {
+        width: 20%;
+        align-self: start;
+      }
+    }
+    &_radio {
+    }
+    &_textarea {
+    }
+    &_button {
+      @include jucc();
+      text-align: center;
+      input {
+        padding: 0px 0px 0px 0px;
+        background-color: transparent;
+      }
+      &:hover {
+        background-color: #2d8b67;
+        input {
+          background-color: transparent;
+        }
+      }
+    }
+    &_submit {
+      margin: 10px 0px 0px 0px;
+      flex: 0 1 20%;
+      padding: 5px 10px 5px 10px;
+      &:hover {
+        background-color: #2d8b67;
+        input {
+          background-color: transparent;
+        }
+      }
+      input {
+        background-color: transparent;
+        color: #222429;
+        padding: 0px 0px 0px 0px;
+
+        &:hover {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}
+
+// =====================================================
+// ============== форма космонавт ===================
+// =====================================================
+.feedback {
+  background-color: #bb8830;
+  border: 2px solid red;
+
+  &__body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    background-color: #5c4317;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+    @include flex();
+  }
+  &__header {
+    flex: 0 1 100%;
+  }
+  &__plaza {
+    flex: 0 1 100%;
+  }
+  &__button {
+    flex: 0 1 30%;
+    margin: 20px 0px 0px 0px;
+  }
+}
+
+// ------ шапка--------------------
+.header-feedback {
+  @include jucc();
+
+  &__icon {
+    background-color: #bee1ff;
+    width: 30px;
+    height: 30px;
+  }
+
+  &__title {
+    background-color: #3dbbff;
+    flex: 0 1 100%;
+  }
+
+  &__text {
+    background-color: #246eb9;
+    flex: 0 1 100%;
+  }
+}
+
+// -----контейнер для единичны блоков-----------------
+.plaza-feedback {
+  &__body {
+    padding: 20px 0px 0px 0px;
+    background-color: #ff9419;
+    @include flex();
+    width: 100%;
+    height: 100%;
+  }
+  &__item {
+    border: 2px solid aqua;
+    flex: 0 1 100%;
+  }
+}
+// ---------- единичный блок---------------------------
+.item-plaza-feedback {
+  border: 2px solid blue;
+  background-color: #193549;
+  @include center();
+
+  position: relative;
+  &__icon {
+    //  flex: 0 1 100%;
+
+    background-color: #ff9419;
+  }
+  span {
+    position: relative;
+    z-index: 2;
+    font-family: Lobster-Regular;
+    font-size: 25px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    color: red;
+  }
+  &__text {
+    font-family: Lobster-Regular;
+    font-size: 25px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    color: blue;
+  }
+}
+// ----------двойной единичный блок ---------------------------
+.item-plaza-feedback-duble {
+  &__body {
+    @include jucb();
+  }
+  &__left {
+    // flex: 0 1 29%;
+    width: 300px;
+    @media screen and (max-width: 678px) {
+      padding: 0px 0px 250px 0px;
+      margin: 0px auto;
+    }
+  }
+  &__right {
+    flex: 0 1 50%;
+    @media screen and (max-width: 678px) {
+      flex: 0 1 100%;
+    }
+  }
+}
+// ---------------------------
+.right-duble {
+  border: 2px solid #a6afff;
+  &__body {
+    @include jucc();
+  }
+  &__head {
+    background-color: #6e6e6e;
+    flex: 0 1 100%;
+  }
+  &__foot {
+    width: 300px;
+
+    background-color: #856f3c;
+    font-family: Lobster-Regular;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+  }
+}
+
+// ---------------------------------
+// ========== каскад====================
+// =====================================
+
+.cascade {
+  background-color: #bb8830;
+  border: 2px solid red;
+
+  &__body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    background-color: #5c4317;
+    text-align: center;
+    padding: 20px 10px 20px 10px;
+  }
+  &__header {
+    flex: 0 1 100%;
+  }
+  &__plaza {
+    flex: 0 1 100%;
+  }
+}
+
+// ------ шапка--------------------
+.header-cascade {
+  &__icon {
+    background-color: #bee1ff;
+  }
+
+  &__title {
+    background-color: #3dbbff;
+  }
+
+  &__text {
+    background-color: #246eb9;
+  }
+}
+
+// -----контейнер для единичны блоков-----------------
+.plaza-cascade {
+  &__body {
+    background-color: #ff9419;
+    @include jucb();
+    width: 100%;
+    height: 100%;
+    @media screen and (max-width: 800px) {
+      @include fdc();
+      @include alic();
+    }
+  }
+  &__item {
+    border: 2px solid aqua;
+    width: 160px;
+    @media screen and (max-width: 800px) {
+      margin: 20px 0px 20px 0px;
+    }
+    &:last-child {
+      width: 112px;
+
+      .right-cascade-duble {
+        display: none;
+      }
+      .cascade-duble__left {
+        flex: 0 1 100%;
+      }
+    }
+  }
+}
+
+// ---------- единичный блок---------------------------
+.item-plaza-cascade {
+  background-color: #193549;
+  &__body {
+    @include jucc();
+    flex-wrap: wrap;
+  }
+  &__item {
+    flex: 0 1 100%;
+
+    &_icon {
+      background-color: #bee1ff;
+    }
+
+    &_text {
+      background-color: #b29c69;
+      font-family: Lobster-Regular;
+      font-size: 15px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.67;
+      letter-spacing: normal;
+      text-align: left;
+    }
+    &_button {
+      margin: 10px 0px;
+    }
+  }
+}
+// ----------двойной единичный блок ---------------------------
+.cascade-duble {
+  &__body {
+    width: 100%;
+    height: 100%;
+    @include jucc();
+  }
+  &__left {
+    flex: 0 1 71%;
+    @media screen and (max-width: 800px) {
+      flex: 0 1 100%;
+    }
+  }
+  // &__right {
+  //   flex: 0 1 20%;
+  // }
+}
+
+.right-cascade-duble {
+  border: 2px solid #a6afff;
+  padding: 10px 5px 0px 5px;
+  flex: 0 1 20%;
+}
+
+// =================================
+// ============== poup акция =====https://www.youtube.com/watch?v=rIb0OoNWDEs==============
+// .popup-action {
+
+// 	width: 100%;
+// 	height: 100vh;
+// background-color: #848789;
+//   // z-index: 1000;
+
+//
+// }
+
+.button-pop {
+  border-radius: 3px;
+  background-color: #ff5252;
+  text-align: center;
+  cursor: pointer;
+  padding: 20px 0px 20px 0px;
+  transition: all 0.2s ease;
+}
+
+.button-pop span {
+  font-family: Lobster-Regular;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  color: #fff;
+
+  text-transform: uppercase;
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: none;
+}
+
+.popup {
+  position: absolute;
+  width: 400px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  box-sizing: border-box;
+  background-color: #ff5252;
+  color: #fff;
+  // z-index: 1000;
+}
+
+.close-popup {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
+}
+
+.close-popup:before {
+  content: "";
+  background-color: #fff;
+  position: absolute;
+  height: 1px;
+  width: 31px;
+  top: 11px;
+  left: -4px;
+  transform: rotate(-45deg);
+}
+
+.close-popup:after {
+  content: "";
+  background-color: #fff;
+  position: absolute;
+  height: 1px;
+  width: 31px;
+  top: 11px;
+  transform: rotate(45deg);
+  left: -4px;
+}
+
+@media screen and (max-width: 768px) {
+  .popup {
+    width: 100%;
+    height: 100vh;
+    font-size: 15px;
+  }
+}
+
+// ------------------------------------
+.eTimer {
+  width: 500px;
+  height: 50px;
+}

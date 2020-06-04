@@ -1,0 +1,194 @@
+@import "common/mixins";
+
+.header {
+  position: fixed;
+   z-index: 1000;    
+   width: 100%;  
+  
+  &__body {
+   
+    width: 100%;
+    height: 100%;
+    @include alic();
+    padding: 0.4% 2.3% 0.4% 4.2%;
+    position: relative;
+    box-shadow: 0px 0px 40px rgba(1, 56, 120, 0.14);
+    @media screen and (max-width: 850px) {
+      display: none;
+    }
+  }
+  &__logo {
+    background-color: #b29c69;
+    padding: 0% 0% 0% 2.3%;
+    flex: 0 1 11%;
+    position: relative;
+    z-index: 2;
+    @include jucs();
+  }
+  &__button {
+    flex: 0 1 16.5%;
+    margin: 0% 0% 0% 1.5%;
+    position: relative;
+    z-index: 2;
+    @media screen and (max-width: 1390px) {
+      margin: 0% auto 0% 5%;
+      flex: 0 1 30%;
+    }
+  }
+  &__menu {
+    flex: 0 1 40%;
+    background: red;
+    margin: 0% auto 0% 3.1%;
+    @media screen and (max-width: 1390px) {
+      display: none;
+    }
+  }
+
+  &__phone {
+    background-color: #d24a4c;
+    flex: 0 1 14%;
+    margin: 0% 0% 0% 0%;
+    @media screen and (max-width: 1390px) {
+      flex: 0 1 30%;
+      margin: 0% 0% 0% 2%;
+    }
+  }
+}
+// --------------burger---------------------------
+.icon-menu {
+  // @media (max-width: 580px) {
+  background: blue;
+  display: block;
+  position: relative;
+  // position: absolute;
+  width: 39px;
+  height: 20px;
+  // margin: 0px 20px 0px 0px;
+  cursor: pointer;
+  z-index: 5;
+  span {
+    top: 9px;
+    left: 0px;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: $color5;
+    @include anim(0.3s);
+
+    &:first-child {
+      top: 0px;
+    }
+
+    &:last-child {
+      top: auto;
+      bottom: 0px;
+    }
+    // }
+
+    &.active {
+      span {
+        @include scale(0);
+        background-color: #fff;
+
+        &:first-child {
+          @include rotate(-45deg);
+          top: 8px;
+        }
+
+        &:last-child {
+          @include rotate(45deg);
+          bottom: 8px;
+        }
+      }
+    }
+  }
+}
+
+// ------------- menu ------------------------
+.menu {
+  &__body {
+    position: relative;
+    z-index: 2;
+    @include jucs();
+    @include alic();
+    width: 100%;
+    height: 100%;
+    @include anim(0.3s);
+  }
+
+  &__link {
+    position: relative;
+    @include jucs();
+    @include anim(0.2s);
+  }
+}
+
+.menu li p {
+  @include Text-Style-2;
+  margin: 0px 24px 0px 0px;
+  line-height: 0.7;
+  padding: 10px 0px;
+  @include anim(0.2s);
+}
+
+.menu li:hover p {
+  z-index: 100;
+  color: #c2daeb;
+}
+
+.menu ul {
+  @include anim(0.2s);
+  @include jucs();
+  position: relative;
+  z-index: 2;
+}
+
+// -----------------
+.phone-header {
+  background-color: #4e3710;
+  position: relative;
+  z-index: 2;
+  &__body {
+    width: 100%;
+    height: 100%;
+    @include jucs();
+  }
+  &__text {
+    flex: 0 1 100%;
+    @include Text-Style-3;
+    text-align: start;
+    @media screen and (max-width: 1380px) {
+      text-align: end;
+    }
+  }
+  &__link {
+    flex: 0 1 100%;
+    padding: 4% 0% 0% 0%;
+    @include jucs();
+    width: 100%;
+    height: 100%;
+    @media screen and (max-width: 1380px) {
+      @include juce();
+    }
+
+    span {
+      background: blue;
+      width: auto;
+      height: 100%;
+      display: block;
+      @include Text-Style-4;
+      border-bottom: 2px dotted;
+    }
+  }
+}
+
+.fon-header {
+  position: absolute;
+  background: #000000;
+  z-index: 1;
+  opacity: 0.59;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+}
