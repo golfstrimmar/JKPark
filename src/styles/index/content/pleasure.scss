@@ -1,0 +1,198 @@
+// =======================================================
+//                  block-pleasure
+// =======================================================
+.pleasure {
+  &__body {
+    position: relative;
+    @include jucc();
+    width: 100%;
+    height: 100%;
+    padding: 0% 4% 0% 0%;
+  }
+
+  // ----------ширина контента-----
+  &__content {
+    position: relative;
+    flex: 0 1 100%;
+    padding: 0% 0% 0% 0%;
+  }
+}
+
+// ---------управление единичными блоками---------------------
+.content-pleasure {
+  &__body {
+    position: relative;
+    @include jucb();
+    padding: 4.5% 0% 0% 0%;
+  }
+  // ----ширина единичного блока-----
+  &__item1 {
+    flex: 0 1 45%;
+    padding: 1.4% 0% 0% 0%;
+      @media screen and (max-width: 1270px) {
+     flex: 0 1 100%;
+     @include jucc(); 
+    }
+  }
+  &__item2 {
+    flex: 0 1 52.4%;
+    @media screen and (max-width: 1270px) {
+     flex: 0 1 100%;
+    }
+  }
+}
+// =====единичный блок=========
+.tiny-pleasure {
+  width: 100%;
+  height: 100%;
+  &__body {
+    position: relative;
+    @include jucc();
+    text-align: left;
+    width: 100%;
+    height: 100%;
+       
+  }
+
+  &__title {
+    background-color: #bee1ff;
+    @include Text-Style-21;
+    font-weight: 700;
+    flex: 0 1 100%;
+        @media screen and (max-width: 1270px) {
+   text-align: center;
+     padding: 0% 0% 0% 0%;
+    }
+  }
+  &__text {
+    background-color: #ff9419;
+    @include Text-Style-22;
+    flex: 0 1 100%;
+    text-transform: lowercase;
+    padding: 7.6% 5% 0% 0%;
+      @media screen and (max-width: 1270px) {
+   text-align: center;
+     padding: 0% 0% 0% 0%;
+    }
+  }
+
+  &__button {
+    background-color: cornflowerblue;
+    position: relative;
+    z-index: 2;
+  @media screen and (max-width: 1270px) {
+     flex: 0 1 100%;
+     @include jucc();  
+    }
+    padding: 6.3% 0% 5% 0%;
+ 
+  }
+}
+
+// =======================================================
+//               end of   block-pleasure
+// =======================================================
+
+// ====================================================
+//                  spleasure
+// ====================================================
+.container-spleasure {
+  // max-width: 100%;
+  max-width: 44vw;
+  // margin: 0px auto;
+@media screen and (max-width: 1270px) {
+  max-width: 85vw;  
+} 
+
+}
+.spleasure {
+  width: 100%;
+  height: 100%;
+  &__body {
+    // @include jucc();
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+ 
+  // ---------------------------------------------------------------
+  //  !!!!!!!!!управление шириной содержимого  одного слайда!!!!!!!!!!!!!!!!!!
+  &__slide {
+    max-width: 100%;
+  }
+  // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  // ----------------------------------------------------------------
+
+  &__slides {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// ---------------------------------------------------------------
+// !!!!!!!!!! управление расположением содержимого слайда!!!!!!!!!!!
+.slick-slide {
+  // text-align: left;
+  // text-align: center;
+  // text-align: right ;
+  flex: 0 1 100%;
+}
+
+// ===========================================
+.spleasure-tiny {
+  width: 100%;
+  height: 100%;
+  @include flex();
+  &__body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0% 0% 63% 0%;
+    flex: 0 1 100%;
+  }
+}
+// ----------------------------------
+.arrows-spleasure {
+  // @include flex();
+  flex: 0 1 100%;
+  @include juca();
+
+  &__arrow {
+    position: relative;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    transform: translate(0%, -50%);
+    border-radius: 50%;
+    background: #f8f9f7;
+    @include anim(0.2s);
+
+    &:hover{ 
+      background: $color1;
+    }
+    img {
+      position: absolute;
+      z-index: 500;
+      width: 30%;
+      height: 50%;
+      top: 50%; 
+      transform: translate(90%, -50%); 
+    }  
+      &_prev {
+        left: -14px;
+      }
+
+      &_next {
+        right: -14px;
+        img {
+          transform: (translate(120%, -50%) rotate(180deg));      
+        }
+      }
+    }
+ 
+}
+
+// ====================================================
+//                  end of spleasure
+// ====================================================

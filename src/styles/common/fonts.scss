@@ -47,7 +47,20 @@ font-weight: normal;
 font-style: normal;
 font-stretch: normal;
 }
-
+@font-face {
+font-family: ubantu;
+src:
+local(ubantu),
+url('../fonts/ubantu.woff') format('woff'),
+url('../fonts/ubantu.ttf') format('truetype'),
+url('../fonts/ubantu}') format('embedded-opentype'),
+url('../fonts/ubantu.svg  ') format('svg'),
+url('../fonts/ubantu.otf  '),
+url('../fonts/ubantu.eot  ');
+font-weight: normal;
+font-style: narmal;
+font-stretch: normal;
+}
 // -----------------------------------------
 @mixin Text-Style-1 {
 font-family: Gotham Pro;
@@ -227,6 +240,68 @@ font-weight: 500;
 font-size: 16px;
 line-height: 26px;
 color: #444444;
+}
+@mixin Text-Style-21 {
+font-family: Gotham Pro;
+font-style: normal;
+font-weight: 900;
+font-size: 40px;
+line-height: 46px;
+color: #373737;
+text-transform: lowercase;
+
+}
+@mixin Text-Style-22 {
+font-family: OpenSans;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 26px;
+color: #252D34;
+}
+@mixin Text-Style-23 {
+font-family: Gotham Pro;
+font-style: normal;
+font-weight: 500;
+font-size: 17px;
+line-height: 25px;
+color: #2F2F2F;
+}
+@mixin Text-Style-24 {
+font-family: OpenSans; 
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 25px;
+color: #252D34;
+}
+// --------panorama--------------
+@mixin Text-Style-25 {
+font-family: ubantu; 
+font-style: normal;
+font-weight: 500;
+font-size: 42px;
+line-height: 53px;
+color: #FFFFFF;
+}
+@mixin Text-Style-26 {
+font-family: OpenSans;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 26px;
+color: #FFFFFF;
+}
+@mixin Text-Style-27 {
+font-family: Gotham Pro;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 13px;
+text-align: center;
+letter-spacing: 1px;
+text-transform: uppercase;
+color: #252D34;
 }
 // @mixin Text-Style-18 {
 

@@ -138,3 +138,59 @@ $(Document).ready(function () {
     ],
   });
 });   
+$(Document).ready(function () {
+  $(".spleasure-js").slick({
+    arrows: true,
+    // dots: true,
+    slidesToShow: 1,
+    // infinite: false,
+    slideToscroll: 1,
+    speed: 800,
+    // easing: "ease",
+    adapitveHeight: true,
+    rows: 1,
+    nextArrow: $(".arrows-spleasure__arrow_prev"),
+    prevArrow: $(".arrows-spleasure__arrow_next"),
+    responsive: [
+      {
+        breakpoint: 960,
+        settings: {
+          // arrows: false,
+          slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 620,
+        settings: {
+          // arrows: false,
+          // centerPadding: "40px",
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+});   
+$(Document).ready(function () {
+  $(".safity-js").slick({
+    arrows: true,
+    // dots: true,
+    slidesToShow: 2,
+    // infinite: false,
+    slideToscroll: 1,
+    speed: 800,
+    // easing: "ease",
+    adapitveHeight: true,
+    rows: 1,
+    nextArrow: $(".arrow-saf_prev"),
+    prevArrow: $(".arrow-saf_next"),
+    responsive: [
+      {
+        breakpoint: 960,
+        settings: {
+          // arrows: false,
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+});   
