@@ -47,6 +47,7 @@
     height: 100%;
 
     span {
+ @include Text-Style-32;
     }
   }
 }

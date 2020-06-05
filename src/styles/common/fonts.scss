@@ -1,20 +1,3 @@
-
-// -----------------------------------------------------------------------
-@font-face {
-font-family: Lobster-Regular;
-src:
-local(Lobster-Regular),
-url('../fonts/Lobster-Regular.woff') format('woff'),
-url('../fonts/Lobster-Regular.ttf') format('truetype'),
-url('../fonts/Lobster-Regular}') format('embedded-opentype'),
-url('../fonts/Lobster-Regular.svg  ') format('svg'),
-url('../fonts/Lobster-Regular.otf  '),
-url('../fonts/Lobster-Regular.eot  ');
-font-weight: normal;
-//font-style: italic;
-font-stretch: normal;
-}
-// ========================================================================
 // использовать снипет    font  пере{ }од через табуляцию
 // ========================================================================
 
@@ -303,6 +286,74 @@ letter-spacing: 1px;
 text-transform: uppercase;
 color: #252D34;
 }
+// -------manager------
+@mixin Text-Style-28 {
+font-family: Gotham Pro;
+font-style: normal;
+font-weight: 500;
+font-size: 39px;
+line-height: 53px;
+color: #FFFFFF;
+}
+@mixin Text-Style-29 {
+font-family: OpenSans;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+color: #FFFFFF;
+}
+@mixin Text-Style-30 {
+font-family: Gotham Pro;
+font-style: normal;
+font-weight: bold;
+font-size: 21px;
+line-height: 24px;
+text-align: right;
+color: #FFFFFF;
+}
+@mixin Text-Style-31 {
+font-family: ubantu;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 22px;
+color: #FFFFFF;
+}
+
+
+
+
+@mixin Text-Style-32 {
+     font-family: Gotham Pro;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 13px;
+text-align: center;
+letter-spacing: 1px;
+text-transform: uppercase;
+color: #252D34;
+}
+@mixin Text-Style-33 {
+font-family: Gotham Pro;
+font-style: normal;
+font-weight: 500;
+font-size: 45px;
+line-height: 53px;
+text-align: center;
+color: #FFFFFF;
+}
+@mixin Text-Style-34 {
+font-family: Gotham Pro;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 26px;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+}
 // @mixin Text-Style-18 {
 
 // }
@@ -316,6 +367,9 @@ color: #252D34;
 
 // }
 // @mixin Text-Style-18 {
+
+// }
+// @mixin Text-Style- {
 
 // }
 

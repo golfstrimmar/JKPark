@@ -194,3 +194,21 @@ $(Document).ready(function () {
     ],
   });
 });   
+
+
+$(Document).ready(function () {
+  $(".slider-manager-js").slick({
+    arrows: true,
+    // dots: true,
+    slidesToShow: 1,
+    // infinite: false,
+    slideToscroll: 1,
+    speed: 800,
+    // easing: "ease",
+    adapitveHeight: true,
+    rows: 1,
+    nextArrow: $(".arrows-slider-manager__arrow_prev"),
+    prevArrow: $(".arrows-slider-manager__arrow_next"),
+ 
+  });
+});   
