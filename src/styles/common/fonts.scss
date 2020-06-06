@@ -1,3 +1,20 @@
+
+// -----------------------------------------------------------------------
+@font-face {
+font-family: Lobster-Regular;
+src:
+local(Lobster-Regular),
+url('../fonts/Lobster-Regular.woff') format('woff'),
+url('../fonts/Lobster-Regular.ttf') format('truetype'),
+url('../fonts/Lobster-Regular}') format('embedded-opentype'),
+url('../fonts/Lobster-Regular.svg  ') format('svg'),
+url('../fonts/Lobster-Regular.otf  '),
+url('../fonts/Lobster-Regular.eot  ');
+font-weight: normal;
+//font-style: italic;
+font-stretch: normal;
+}
+// ========================================================================
 // использовать снипет    font  пере{ }од через табуляцию
 // ========================================================================
 
@@ -354,9 +371,43 @@ text-align: center;
 text-transform: uppercase;
 color: #FFFFFF;
 }
-// @mixin Text-Style-18 {
 
-// }
+// ------popular-------
+@mixin Text-Style-35{
+font-family: Gotham Pro;
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 15px;
+color: #3A3A3A;
+}
+
+@mixin Text-Style-36{
+font-family: OpenSans;
+font-style: normal;
+font-weight: normal;
+font-size: 11px;
+line-height: 20px;
+}
+
+@mixin Text-Style-37{
+font-family: Gotham Pro;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 18px;
+color: #3FBC7B;
+}
+
+
+@mixin Text-Style-38 {
+font-family: Gotham Pro;
+font-style: normal;
+font-weight: 500;
+font-size: 28px;
+line-height: 53px;
+color: #3A3A3A;
+}
 // @mixin Text-Style-18 {
 
 // }

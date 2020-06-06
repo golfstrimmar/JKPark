@@ -20,6 +20,7 @@
 @import "index/content/safity.scss";
 @import "index/content/panorama.scss";
 @import "index/content/manager.scss";
+@import "index/content/popular.scss";
 
 
 
@@ -38,10 +39,10 @@
   top: 0;
   left: 0;
   @include fdc();
-  background: url(../img/background_8.jpg) repeat;
+  // background: url(../img/background_8.jpg) repeat;
 }
 .container {
-  outline: 1px solid #4164ff;
+  // outline: 1px solid #4164ff;
   max-width: 88%; 
   margin: 0% 0% 0% 12%;    
 }

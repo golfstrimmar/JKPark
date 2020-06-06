@@ -1,0 +1,210 @@
+// ====================================================
+//                  slider-popular
+// ====================================================
+.container-popular {
+  max-width: 120vw;        
+  
+  @media screen and (max-width: 1044px) {
+   max-width: 90vw; 
+  }
+  
+}
+.slider-popular {
+  width: 100%;
+  height: 100%;
+  &__body {
+    @include jucs();
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 4% 0% 0% 0%;
+  }
+  // ---------------------------------------------------------------
+  //  !!!!!!!!!управление шириной содержимого  одного слайда!!!!!!!!!!!!!!!!!!
+  &__slide {
+    // max-width: 200px;
+    max-width: 100%;  
+  }
+  // ----------------------------------------------------------------
+
+  &__slides {
+    width: 135%;      
+    height: 100%;
+    margin: 2% 0% 0% 0%;
+    box-shadow: 0px 0px 75px rgba(0, 0, 0, 0.06); 
+  }
+}
+
+// ---------------------------------------------------------------
+.slick-slide {
+  text-align: start; 
+  flex: 0 1 100%;    
+  background-color: #ffffff;
+  border: none; 
+  margin: 0% 34px 0% 0%; 
+} 
+
+// =============шапка слайдера=============================
+.head-popular { 
+  &__title {
+    flex: 0 1 100%;
+    @include Text-Style-38; 
+    text-transform: lowercase;
+  }
+}
+
+.slide-popular{
+  &__body{
+  @include jucs(); 
+  padding: 2% 0% 6% 5%;
+  box-shadow: 0px 0px 75px rgba(0, 0, 0, 0.06);
+  }
+  &__item{
+  flex: 0 1 50%; 
+   @media screen and (max-width: 600px) {
+   flex: 0 1 100%; 
+   
+  }
+  &:first-child{
+    flex: 0 1 41%; 
+     @media screen and (max-width: 600px) {
+   flex: 0 1 100%;   
+   
+  }
+  }
+  }
+  &__icon{ 
+  padding: 8% 0% 0% 6%;
+   @media screen and (max-width: 600px) {
+   @include jucc(); 
+padding: 0% 0% 0% 0%;
+  }
+  }
+}
+// =======================================================
+//                  .right-side                          
+// =======================================================
+.right-side{ 
+  &__body{
+     position: relative;
+     @include jucc();
+     width: 100%;
+     height: 100%;
+  }
+
+  }
+
+// =====единичный блок=========
+.tiny-right-side {
+  width: 100%;
+  height: 100%;
+  &__body {
+    position: relative;
+    @include jucs(); 
+    text-align: left;
+    width: 100%;
+    height: 100%;
+  }
+  &__title {
+    @include Text-Style-35;
+    flex: 0 1 100%;
+    padding: 7% 0% 0% 0%; 
+  }
+  &__text-double{
+  flex: 0 1 100%;
+  }
+
+  &__text {
+    position: relative;
+      @include Text-Style-37;
+      line-height: 1; 
+      flex: 0 1 100%;
+      padding: 18% 0% 0% 0%;  
+      &:after{
+       content: "";
+       background-color: $color1;
+       position: absolute;
+       width: 100%; 
+       height: 1px;
+       top: 40%;      
+       left: 0%;
+       z-index: 2;
+       @media screen and (max-width: 600px) {
+               width: 80%;  
+
+       }
+        }
+    }
+}
+// --------------
+.text-double{
+&__body{
+@include jucs();
+width: 100%;
+height: 100%;
+padding: 32% 0% 0% 0%; 
+@media screen and (max-width: 600px) {
+padding: 6% 0% 0% 0%; 
+ 
+} 
+}
+&__item{
+  flex: 0 1 37%; 
+
+span{
+@include Text-Style-36;
+}
+p{
+@include Text-Style-24;
+position: relative;
+small{
+position: absolute;
+width: 5px;
+height: 8px;
+top: -3px;
+left: 53px;
+}
+}
+}
+
+}
+
+
+.arrows-slider-popular {
+  flex: 0 1 100%;
+  @include juca();
+  padding: 0% 0% 0% 0%;
+ &__arrow {
+    position: relative;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    bottom: -65px; 
+    border-radius: 50%;
+    background: $color1;
+    @include anim(0.2s);
+
+    &:hover{ 
+      background: $color4;
+    }
+    img {
+      position: absolute;
+      z-index: 500;
+      width: 30%;
+      height: 50%;
+      top: 50%; 
+      transform: translate(90%, -50%); 
+    }  
+      &_prev {
+        left: 8px;
+      }
+
+      &_next {
+        left: 50px; 
+        img {
+          transform: (translate(120%, -50%) rotate(180deg));      
+        }
+      }
+    }
+}
+

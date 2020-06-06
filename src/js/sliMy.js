@@ -212,3 +212,35 @@ $(Document).ready(function () {
  
   });
 });   
+$(Document).ready(function () {
+  $(".slider-popular-js").slick({
+    arrows: true,
+    // dots: true,
+    slidesToShow: 3, 
+    // infinite: false,
+    slideToscroll: 1,
+    speed: 800,
+    // easing: "ease",
+    adapitveHeight: true,
+    rows: 1,
+    nextArrow: $(".arrows-slider-popular__arrow_prev"),
+    prevArrow: $(".arrows-slider-popular__arrow_next"),
+    responsive: [
+      {
+        breakpoint: 1260,  
+        settings: {
+          // arrows: false,
+          slidesToShow: 2,
+        }
+      },
+       {
+         breakpoint: 1044,
+        settings: {
+          // arrows: false,
+          slidesToShow: 1,  
+        }
+      }
+    ],
+ 
+  });
+});   
