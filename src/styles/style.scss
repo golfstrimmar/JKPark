@@ -21,6 +21,7 @@
 @import "index/content/panorama.scss";
 @import "index/content/manager.scss";
 @import "index/content/popular.scss";
+@import "index/content/news.scss";
 
 
 
@@ -64,7 +65,7 @@
 }
 
 a {
-  @include center();
+  // @include center(); 
   width: 100%;
   height: 100%;
   &:hover {

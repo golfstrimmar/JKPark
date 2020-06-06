@@ -408,23 +408,50 @@ font-size: 28px;
 line-height: 53px;
 color: #3A3A3A;
 }
-// @mixin Text-Style-18 {
+// ------------news
+@mixin Text-Style-39 {
+   font-family: OpenSans;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 16px;
+letter-spacing: 0.02em;
+color: #FFFFFF;
+}
+@mixin Text-Style-40 {
+   font-family: Gotham Pro;
+font-style: normal;
+font-weight: 500;
+font-size: 19px;
+line-height: 18px;
+letter-spacing: 0.02em;
+color: #FFFFFF;
+}
+@mixin Text-Style-41 {
+font-family: OpenSans;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 145.66%;
+letter-spacing: 0.02em;
+color: #FFFFFF;
+}
+@mixin Text-Style-42 {
+    font-family: Gotham Pro;
+font-style: normal;
+font-weight: bold;
+font-size: 8px;
+line-height: 136.73%;
+letter-spacing: 0.02em;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+@mixin Text-Style-43 {
 
-// }
-// @mixin Text-Style-18 {
+}
+@mixin Text-Style-44 {
 
-// }
-// @mixin Text-Style-18 {
-
-// }
-// @mixin Text-Style-18 {
-
-// }
-// @mixin Text-Style- {
-
-// }
-
-
+}
 
 // =========================================================================
 @font-face {

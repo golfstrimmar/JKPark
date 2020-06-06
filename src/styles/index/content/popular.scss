@@ -11,27 +11,31 @@
 }
 .slider-popular {
   width: 100%;
+  overflow: hidden; 
   height: 100%;
   &__body {
     @include jucs();
     width: 100%;
     height: 100%;
     position: relative;
-    padding: 4% 0% 0% 0%;
+    padding: 4% 0% 5% 0%; 
   }
   // ---------------------------------------------------------------
   //  !!!!!!!!!управление шириной содержимого  одного слайда!!!!!!!!!!!!!!!!!!
   &__slide {
     // max-width: 200px;
     max-width: 100%;  
+     
   }
   // ----------------------------------------------------------------
 
   &__slides {
-    width: 135%;      
+    width: 150%;   
+    // width: 100%;
     height: 100%;
     margin: 2% 0% 0% 0%;
     box-shadow: 0px 0px 75px rgba(0, 0, 0, 0.06); 
+    
   }
 }
 
@@ -41,7 +45,7 @@
   flex: 0 1 100%;    
   background-color: #ffffff;
   border: none; 
-  margin: 0% 34px 0% 0%; 
+  margin: 0% 25px 0% 0%; 
 } 
 
 // =============шапка слайдера=============================
@@ -58,6 +62,7 @@
   @include jucs(); 
   padding: 2% 0% 6% 5%;
   box-shadow: 0px 0px 75px rgba(0, 0, 0, 0.06);
+  
   }
   &__item{
   flex: 0 1 50%; 
@@ -170,19 +175,29 @@ left: 53px;
 }
 
 
-.arrows-slider-popular {
+.arrows-slider-popular,.arrows-slider-news {
   flex: 0 1 100%;
   @include juca();
   padding: 0% 0% 0% 0%;
+  @media screen and (max-width: 500px) {
+      display: none; 
+     }
  &__arrow {
     position: relative;
     position: absolute;
     width: 30px;
     height: 30px;
-    bottom: -65px; 
+    bottom: 5px; 
     border-radius: 50%;
     background: $color1;
     @include anim(0.2s);
+    z-index: 200;
+     @media screen and (max-width: 1200px) {
+      bottom: -22px;       
+     }
+   @media screen and (max-width: 1030px) {
+     bottom: -20px;   
+   }
 
     &:hover{ 
       background: $color4;
