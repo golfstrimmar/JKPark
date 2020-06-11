@@ -3,8 +3,8 @@ max-width: 100%;
 }
 
 .slider-top {
-  width: 100%;
-  height: 100%; 
+ width: 100%;
+ height: 100%;
   &__body {
   @include jucc();
     width: 100%; 
@@ -12,20 +12,19 @@ max-width: 100%;
     position: relative;
 padding: 19.7% 0% 3.7% 9.35%;  
 padding: 19.7% 9.35% 3.7% 9.35%;   
-
 @media screen and (max-width: 1340px) {
  padding: 19.7% 9.35% 3.7% 9.35%;  
 
 }
 @media screen and (max-width: 1040px) {
  padding: 13% 15% 1% 15%;    
-
 }
+@media screen and (max-width:  768px) { 
+   padding: 23% 15% 1% 15%;  
+  } 
+
+
   }
-  &__head {
-
-}
-
 
 &__arrows{ 
  position: absolute; 
@@ -34,13 +33,13 @@ padding: 19.7% 9.35% 3.7% 9.35%;
   left: 0; 
 transform: translate(0%,-50%); 
 z-index: 10;
- 
 } 
 
 // ---------------------------------------------------------------
 //  !!!!!!!!!управление шириной содержимого  одного слайда!!!!!!!!!!!!!!!!!!
 &__slide {
     max-width: 80%; 
+    background-color: transparent;    
     @media screen and (max-width: 1230px) {
          max-width: 100%;  
 
@@ -49,29 +48,48 @@ z-index: 10;
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
  
 &__slides {  
-background: blue; 
 position: relative;
- 
+background: transparent;  
 }
 
 &__bottom{
 flex: 0 1 100%;
-background: red;
 padding: 9.2% 0% 0% 0%;
 }
+
+&__pendel{
+  position: absolute; 
+z-index: 5; 
+width: 10%;       
+height: 50%;         
+top: -5%;      
+left: 75%; 
+@media screen and (max-width:  1040px) {
+   top: -15%;  
+height: 40%;
+   left: 85%;  } 
+
+@media screen and (max-width:  620px) { 
+  top: -10%; 
+height: 30%; 
+   left:75%; 
+  } 
+
+img{
+@media screen and (max-width:  1100px) {  
+width: 80px;   
+ } 
+ 
+@media screen and (max-width: 620px) {  width: 60px;  } 
 }
+}}
 // ---------------------------------------------------------------
 // !!!!!!!!!! управление расположением содержимого слайда!!!!!!!!!!!
 .slick-slide {
-  // text-align: left;
-  // text-align: center;
-  // text-align: right ;
   flex: 0 1 20%;
   position: relative;
   
 }
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-// ---------------------------------------------
 
 // ===========================================
 .slider-top-tiny {
@@ -81,15 +99,16 @@ padding: 9.2% 0% 0% 0%;
     text-align: left;
     @include flex();
     padding: 0% 0% 0% 0%; 
+    background: transparent;  
   }
 
   &__title {
    position: relative;
-    background-color: #9fff0f;
     flex: 0 1 100%;
   @include  Text-Style-6;
 line-height: 1; 
-text-transform: uppercase;
+text-transform: lowercase;
+background: transparent;   
 @media screen and (max-width: 1040px) {
  font-size: 40px; 
 }
@@ -101,7 +120,6 @@ text-transform: uppercase;
   &__text {
     position: relative;
     z-index: 2;
-    // flex: 0 1 20%;
     &_one {
       
       opacity: 0.8;
@@ -125,10 +143,7 @@ p{
   }
  
 }
-// ----------------------------------------
-.arrows-slider-top{
-  
-}
+
 // ----------------------------------------
 .arrows-slider-top{
 
@@ -159,10 +174,12 @@ transform: translate(-60%,-50%);
 width: 9px;height: 20px;
 }
   &_prev {  
- left: 3.7%;        
+ left: -7%;  
+@media screen and (max-width:  768px) {  left: -15%;   }   
 }
 &_next {  
-right: 2.7%;
+right: -7%; 
+@media screen and (max-width:  768px) { right: -15%;  } 
 }
  }}
 
@@ -217,7 +234,6 @@ padding: 0% 20% 0% 20%;
 }
 
 margin: 0% 6.2% 0% 0%; 
-background: blue; 
 &:last-child{
   margin: 0% 0% 0% 0%;
 }
@@ -250,7 +266,6 @@ background: blue;
   &__icon {
     position: relative;
     z-index: 2;
-    background-color: #246eb9;
     opacity: 0.8;
     text-align: center;
     padding: 0% 0% 0% 0%;
@@ -265,7 +280,6 @@ background: blue;
   &__title {
     position: relative;
     z-index: 2; 
-    background-color: #BEE1FF;
     @include Text-Style-8;
     // flex: 0 1 70%;
     padding: 0% 0% 0% 0%; 
@@ -277,15 +291,9 @@ padding: 3% 0% 0% 0%;
   }
   }
 
-
   .icon-bottom{
   &__body{
   @include jucc();
-  background: blue;
-
-  // @media screen and (max-width: 540px) {
-  // //  width: 40px;height: 40px; 
-  // }
   }
   &__low{
  
@@ -295,7 +303,7 @@ padding: 3% 0% 0% 0%;
    height: 100%;  
   } 
  
-  }
+  } 
   &__high{
   position: absolute;
   z-index: 500;
@@ -307,10 +315,6 @@ padding: 3% 0% 0% 0%;
     height: 100%;
   }
   transform: translate(-50%,-50%);
-  //  @media screen and (max-width: 540px) {
-  //  width: 70%;
-  // height: 70%;
-  //   }
   }
 }
 

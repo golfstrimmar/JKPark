@@ -41,7 +41,6 @@
 
   &__column {
     flex: 0 1 10%;
-    background-color: #b29c69;
    @media screen and (max-width: 530px) {
     padding: 2% 3% 0% 3%; 
     margin: 0% 0% 0% 0%; 
@@ -97,7 +96,6 @@
     display: block;
     line-height: 1;
     text-align: start;
-    background: blue;
     padding: 0% 0% 15% 0%;  
   }
 }
@@ -143,12 +141,10 @@
 .icon-tiny-footer {
   &__body {
     @include juce(); 
-    background: red; 
   }
 
   &__button {
     flex: 0 1 36.5%; 
-    background: blue;
     @include juce(); 
     &_white{
     padding: 0.5% 0% 0% 0%;    
@@ -175,7 +171,6 @@
   // .social-nav__body
 
   &__body {
-    background: blue;
  @include juce();  
   }
 
@@ -183,7 +178,6 @@
 
   &__icon {
     flex: 0 1 30px; 
-    background: red; 
   }
 }
 
@@ -191,7 +185,6 @@
 .bottom-footer {
   &__body {
     @include jucb();
-    border-top: 1px solid #e6e6e6;
     padding: 2.6% 0% 0% 0%; 
   }
 
@@ -211,7 +204,6 @@
   &__link {
     @include Text-Style-15;
     flex: 0 1 45%; 
-    border: 1px solid darkcyan;
     display: block;
     text-align: start;
    @media screen and (max-width: 950px) {
@@ -225,7 +217,6 @@
   }
 
   &__logo {
-    background: blue;
     flex: 0 1 40%;
     @include juce();
     p {

@@ -12,6 +12,16 @@ $(Document).ready(function () {
 });
 
 
+$(Document).ready(function () {
+  $(".icon-side").click(function (event) {
+    $(this).toggleClass("side-menu-icon-active"),
+      $('.side-menu').toggleClass("side-menu-active"),
+
+      $("body").toggleClass("lock");
+  });
+});
+
+
 
 
 

@@ -424,7 +424,14 @@ text-align: center;
 color: #FFFFFF;
 }
 
-
+@mixin Text-Style-102{
+font-family: Gotham Pro;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 36px;
+color: #252D34;
+};
 
 
 

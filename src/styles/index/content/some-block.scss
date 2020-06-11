@@ -258,8 +258,7 @@
   // ----------------------------------------------------------------
 
   &__slides {
-    outline: 2px solid #d4b584;
-    width: 100%;
+    width: 100%; 
     height: 100%;
   }
 }
@@ -270,9 +269,7 @@
   // text-align: left;
   // text-align: center;
   // text-align: right ;
-  background-color: #a9afb3;
-  border: 2px solid #d4b584;
-  flex: 0 1 20%;
+  flex: 0 1 20%; 
 }
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 // ---------------------------------------------
@@ -321,7 +318,6 @@
     z-index: 2;
     flex: 0 1 100%;
     &_one {
-      background-color: red;
       flex: 0 1 100%;
       @include Text-Style-9;
       line-height: 1;
@@ -405,7 +401,6 @@
     z-index: 2;
     flex: 0 1 100%;
     &_one {
-      background-color: red;
       flex: 0 1 100%;
       @include Text-Style-9;
       line-height: 1;

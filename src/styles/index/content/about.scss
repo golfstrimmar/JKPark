@@ -1,3 +1,118 @@
+@import "common/mixins";
+
+.location_about{ position: relative;}
+
+.location-about-side{
+  &__body{
+ position: absolute;
+  z-index: 40; 
+  width: 12%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  padding: 4.5% 0% 0% 1%; 
+  border-top-right-radius: 20px; 
+ @include anim(0.2s);
+  @media screen and (max-width:  1100px) {
+ width: 30%; 
+background: grey; 
+   margin: 1% 0% 0% 0%;
+   left: -25%;       
+     } 
+     @media screen and (max-width:  500px) {  display: none; }  
+ 
+ li{
+   display: block;
+   @include anim(0.2s);
+   width: 80%;
+   padding: 0% 0% 0% 2%;
+  margin: 5% 0% 0% 0%;  
+@media screen and (min-width:  1101px) {  width: 95%; } 
+   &:hover{
+  background: linear-gradient(90deg, #725E55 0%, #88563F 100%);
+   a{color:#fff;
+   }
+   
+     }
+ }
+ 
+ 
+    }
+}
+ .side-menu-active{
+   display: block;
+   left: 0%;
+ }
+.side-menu{
+  &__icon{
+    position: absolute;
+  z-index: 20;
+  width: 20px;
+  height: 20px; 
+  top: 0%;
+  left: 85%;   
+   display: block; 
+  position: relative;
+  @include anim(0.1s);
+@media screen and (min-width:  1101px) {  display: none; }
+@media screen and (max-width:  750px) { left: 85%;  }
+
+  span{
+position: absolute;
+background-color: #fff;
+z-index: 500;
+width: 20px;
+height: 2px;
+top: 9px; 
+left: 0%;
+@include anim(0.1s);
+@media screen and (max-width:  750px) { width: 15px;  }  
+&:first-child{
+  top: 0%;
+}
+&:last-child{
+  top: auto;
+  bottom: 0;
+}
+ }
+  }
+  &__body{
+  }
+  &__link{
+  @include Text-Style-102;
+  line-height: 1;
+  }
+}
+
+
+.side-menu-icon-active{
+   display: block; 
+
+  span{
+  
+  &:first-child{
+ top: 50%;
+ transform: translate(0%, -50%) rotate(45deg);    
+}
+  &:nth-child(2){
+ display: none;
+   
+}
+
+&:last-child{
+ transform: translate(0%, 50%) rotate(-45deg);
+ bottom: 50%; 
+} 
+
+}
+} 
+
+
+
+
+
+// -------------------------------------
+
 .content-about{
 
 &__links{
@@ -47,3 +162,4 @@ span{
  
 }
 }
+
