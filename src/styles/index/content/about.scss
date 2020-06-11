@@ -12,6 +12,7 @@
   left: 0%;
   padding: 4.5% 0% 0% 1%; 
   border-top-right-radius: 20px; 
+  border-bottom-right-radius: 20px; 
  @include anim(0.2s);
   @media screen and (max-width:  1100px) {
  width: 30%; 
