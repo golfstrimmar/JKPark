@@ -35,12 +35,18 @@
 
 .page {
   position: absolute;
-  width: 100%;
+  max-width: 100%;
   min-height: 100%;
   top: 0;
   left: 0;
   @include fdc();
+  @include anim(0.5s);
   // background: url(../img/background_8.jpg) repeat;
+}
+
+.page-active-sidebar{
+  // width: 80%;
+  // margin-left: 20%;
 }
 .container {
   // outline: 1px solid #4164ff;

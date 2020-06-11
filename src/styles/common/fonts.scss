@@ -61,7 +61,379 @@ font-weight: normal;
 font-style: narmal;
 font-stretch: normal;
 }
-// -----------------------------------------
+
+
+// --------------OpenSans;---------------------------
+
+@mixin Text-Style-11 {
+font-family: OpenSans;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 24px;
+text-align: right;
+color: #252D34;
+}
+
+@mixin Text-Style-13 {
+font-family: OpenSans;
+font-style: normal;
+font-weight: normal;
+font-size: 17px;
+line-height: 24px;
+text-align: right;
+text-decoration-line: underline;
+color: #3FBC7B;
+}
+@mixin Text-Style-14 {
+font-family: OpenSans;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 24px;
+text-decoration-line: underline;
+color: #666666;
+}
+@mixin Text-Style-15 {
+font-family: OpenSans;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 20px;
+color: #464646;
+}
+
+@mixin Text-Style-19 {
+font-family: OpenSans; 
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 26px;
+color: #252D34;
+}
+
+@mixin Text-Style-22 {
+font-family: OpenSans;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 26px;
+color: #252D34;
+}
+
+@mixin Text-Style-24 {
+font-family: OpenSans; 
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 25px;
+color: #252D34;
+}
+
+@mixin Text-Style-26 {
+font-family: OpenSans;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 26px;
+color: #FFFFFF;
+}
+
+@mixin Text-Style-29 {
+font-family: OpenSans;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+color: #FFFFFF;
+}
+
+@mixin Text-Style-36{
+font-family: OpenSans;
+font-style: normal;
+font-weight: normal;
+font-size: 11px;
+line-height: 20px;
+}
+
+
+@mixin Text-Style-39 {
+   font-family: OpenSans;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 16px;
+letter-spacing: 0.02em;
+color: #FFFFFF;
+}
+
+@mixin Text-Style-41 {
+font-family: OpenSans;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 145.66%;
+letter-spacing: 0.02em;
+color: #FFFFFF;
+}
+
+@mixin Text-Style-101{
+font-family: OpenSans;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+text-align: right;
+color: #FFFFFF;
+};
+// =----------------------ubantu;-----------------------------
+@mixin Text-Style-31 {
+font-family: ubantu;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 22px;
+color: #FFFFFF;
+}
+
+@mixin Text-Style-25 {
+font-family: ubantu; 
+font-style: normal;
+font-weight: 500;
+font-size: 42px;
+line-height: 53px;
+color: #FFFFFF;
+}
+
+
+
+
+
+
+// ------------Gotham Pro------------------
+@mixin Text-Style-42 {
+    font-family: Gotham Pro;
+font-style: normal;
+font-weight: bold;
+font-size: 8px;
+line-height: 136.73%;
+letter-spacing: 0.02em;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+
+
+@mixin Text-Style-32 {
+     font-family: Gotham Pro;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 13px;
+text-align: center;
+letter-spacing: 1px;
+text-transform: uppercase;
+color: #252D34;
+}
+
+@mixin Text-Style-27 {
+font-family: Gotham Pro;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 13px;
+text-align: center;
+letter-spacing: 1px;
+text-transform: uppercase;
+color: #252D34;
+}
+@mixin Text-Style-16 {
+font-family: Gotham Pro;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 13px;
+text-align: center;
+letter-spacing: 1px;
+text-transform: uppercase;
+color: #252D34;
+}
+
+
+@mixin Text-Style-10 {
+font-family: Gotham Pro;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 35px;
+color: #323232;
+}
+
+@mixin Text-Style-20 {
+font-family: Gotham Pro;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 26px;
+color: #444444;
+}
+
+@mixin Text-Style-34 {
+font-family: Gotham Pro;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 26px;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+
+@mixin Text-Style-23 {
+font-family: Gotham Pro;
+font-style: normal;
+font-weight: 500;
+font-size: 17px;
+line-height: 25px;
+color: #2F2F2F;
+}
+
+@mixin Text-Style-17 {
+font-family: Gotham Pro;
+font-style: normal;
+font-weight: 500;
+font-size: 17px;
+line-height: 25px;
+letter-spacing: 1px;
+color: #2F2F2F;
+}
+
+@mixin Text-Style-7 {
+font-family: Gotham Pro;
+font-style: normal;
+font-weight: 500;
+font-size: 23px;
+line-height: 30px;
+color: #FFFFFF;
+
+}
+@mixin Text-Style-8 {
+font-family: Gotham Pro;
+font-style: normal;
+font-weight: 500;
+font-size: 17px;
+line-height: 20px;
+color: #FFFFFF;
+}
+@mixin Text-Style-9 {
+font-family: Gotham Pro;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 16px;
+color: #323232;
+}
+
+@mixin Text-Style-40 {
+   font-family: Gotham Pro;
+font-style: normal;
+font-weight: 500;
+font-size: 19px;
+line-height: 18px;
+letter-spacing: 0.02em;
+color: #FFFFFF;
+}
+
+@mixin Text-Style-30 {
+font-family: Gotham Pro;
+font-style: normal;
+font-weight: bold;
+font-size: 21px;
+line-height: 24px;
+text-align: right;
+color: #FFFFFF;
+}
+
+@mixin Text-Style-12 {
+font-family: Gotham Pro;
+font-style: normal;
+font-weight: bold;
+font-size: 21px;
+line-height: 24px;
+text-align: right;
+color: #252D34;
+}
+
+@mixin Text-Style-35{
+font-family: Gotham Pro;
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 15px;
+color: #3A3A3A;
+}
+
+
+@mixin Text-Style-37{
+font-family: Gotham Pro;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 18px;
+color: #3FBC7B;
+}
+
+
+
+
+@mixin Text-Style-38 {
+font-family: Gotham Pro;
+font-style: normal;
+font-weight: 500;
+font-size: 28px;
+line-height: 53px;
+color: #3A3A3A;
+}
+
+
+@mixin Text-Style-28 {
+font-family: Gotham Pro;
+font-style: normal;
+font-weight: 500;
+font-size: 39px;
+line-height: 53px;
+color: #FFFFFF;
+}
+
+@mixin Text-Style-18 {
+font-family: Gotham Pro;
+font-style: normal;
+font-weight: 900; 
+font-size: 42px;
+line-height: 53px; 
+color: #252D34;
+}
+
+
+@mixin Text-Style-33 {
+font-family: Gotham Pro;
+font-style: normal;
+font-weight: 500;
+font-size: 45px;
+line-height: 53px;
+text-align: center;
+color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+
 @mixin Text-Style-1 {
 font-family: Gotham Pro;
 font-style: normal;
@@ -119,128 +491,8 @@ line-height: 91px;
 letter-spacing: 1px;
 color: #FFFFFF;
 }
-@mixin Text-Style-7 {
-font-family: Gotham Pro;
-font-style: normal;
-font-weight: 500;
-font-size: 23px;
-line-height: 30px;
-color: #FFFFFF;
 
-}
-@mixin Text-Style-8 {
-font-family: Gotham Pro;
-font-style: normal;
-font-weight: 500;
-font-size: 17px;
-line-height: 20px;
-color: #FFFFFF;
-}
-@mixin Text-Style-9 {
-font-family: Gotham Pro;
-font-style: normal;
-font-weight: normal;
-                 font-size: 18px;
-line-height: 16px;
-color: #323232;
-}
-@mixin Text-Style-10 {
-font-family: Gotham Pro;
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 35px;
-color: #323232;
-}
-@mixin Text-Style-11 {
-font-family: OpenSans;
-font-style: normal;
-font-weight: normal;
-font-size: 15px;
-line-height: 24px;
-text-align: right;
-color: #252D34;
-}
-@mixin Text-Style-12 {
-font-family: Gotham Pro;
-font-style: normal;
-font-weight: bold;
-font-size: 21px;
-line-height: 24px;
-text-align: right;
-color: #252D34;
-}
-@mixin Text-Style-13 {
-font-family: OpenSans;
-font-style: normal;
-font-weight: normal;
-font-size: 17px;
-line-height: 24px;
-text-align: right;
-text-decoration-line: underline;
-color: #3FBC7B;
-}
-@mixin Text-Style-14 {
-font-family: OpenSans;
-font-style: normal;
-font-weight: normal;
-font-size: 13px;
-line-height: 24px;
-text-decoration-line: underline;
-color: #666666;
-}
-@mixin Text-Style-15 {
-font-family: OpenSans;
-font-style: normal;
-font-weight: normal;
-font-size: 13px;
-line-height: 20px;
-color: #464646;
-}
-@mixin Text-Style-16 {
-font-family: Gotham Pro;
-font-style: normal;
-font-weight: bold;
-font-size: 12px;
-line-height: 13px;
-text-align: center;
-letter-spacing: 1px;
-text-transform: uppercase;
-color: #252D34;
-}
-@mixin Text-Style-17 {
-font-family: Gotham Pro;
-font-style: normal;
-font-weight: 500;
-font-size: 17px;
-line-height: 25px;
-letter-spacing: 1px;
-color: #2F2F2F;
-}
-@mixin Text-Style-18 {
-font-family: Gotham Pro;
-font-style: normal;
-font-weight: 900; 
-font-size: 42px;
-line-height: 53px; 
-color: #252D34;
-}
-@mixin Text-Style-19 {
-font-family: OpenSans; 
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 26px;
-color: #252D34;
-}
-@mixin Text-Style-20 {
-font-family: Gotham Pro;
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 26px;
-color: #444444;
-}
+
 @mixin Text-Style-21 {
 font-family: Gotham Pro;
 font-style: normal;
@@ -251,207 +503,16 @@ color: #373737;
 text-transform: lowercase;
 
 }
-@mixin Text-Style-22 {
-font-family: OpenSans;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 26px;
-color: #252D34;
-}
-@mixin Text-Style-23 {
+
+@mixin Text-Style-100{
 font-family: Gotham Pro;
 font-style: normal;
 font-weight: 500;
-font-size: 17px;
-line-height: 25px;
-color: #2F2F2F;
-}
-@mixin Text-Style-24 {
-font-family: OpenSans; 
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 25px;
-color: #252D34;
-}
-// --------panorama--------------
-@mixin Text-Style-25 {
-font-family: ubantu; 
-font-style: normal;
-font-weight: 500;
-font-size: 42px;
-line-height: 53px;
+font-size: 27px;
+line-height: 63px;
 color: #FFFFFF;
-}
-@mixin Text-Style-26 {
-font-family: OpenSans;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 26px;
-color: #FFFFFF;
-}
-@mixin Text-Style-27 {
-font-family: Gotham Pro;
-font-style: normal;
-font-weight: bold;
-font-size: 12px;
-line-height: 13px;
-text-align: center;
-letter-spacing: 1px;
 text-transform: uppercase;
-color: #252D34;
-}
-// -------manager------
-@mixin Text-Style-28 {
-font-family: Gotham Pro;
-font-style: normal;
-font-weight: 500;
-font-size: 39px;
-line-height: 53px;
-color: #FFFFFF;
-}
-@mixin Text-Style-29 {
-font-family: OpenSans;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 24px;
-color: #FFFFFF;
-}
-@mixin Text-Style-30 {
-font-family: Gotham Pro;
-font-style: normal;
-font-weight: bold;
-font-size: 21px;
-line-height: 24px;
-text-align: right;
-color: #FFFFFF;
-}
-@mixin Text-Style-31 {
-font-family: ubantu;
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 22px;
-color: #FFFFFF;
-}
-
-
-
-
-@mixin Text-Style-32 {
-     font-family: Gotham Pro;
-font-style: normal;
-font-weight: bold;
-font-size: 12px;
-line-height: 13px;
-text-align: center;
-letter-spacing: 1px;
-text-transform: uppercase;
-color: #252D34;
-}
-@mixin Text-Style-33 {
-font-family: Gotham Pro;
-font-style: normal;
-font-weight: 500;
-font-size: 45px;
-line-height: 53px;
-text-align: center;
-color: #FFFFFF;
-}
-@mixin Text-Style-34 {
-font-family: Gotham Pro;
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 26px;
-text-align: center;
-text-transform: uppercase;
-color: #FFFFFF;
-}
-
-// ------popular-------
-@mixin Text-Style-35{
-font-family: Gotham Pro;
-font-style: normal;
-font-weight: 500;
-font-size: 22px;
-line-height: 15px;
-color: #3A3A3A;
-}
-
-@mixin Text-Style-36{
-font-family: OpenSans;
-font-style: normal;
-font-weight: normal;
-font-size: 11px;
-line-height: 20px;
-}
-
-@mixin Text-Style-37{
-font-family: Gotham Pro;
-font-style: normal;
-font-weight: bold;
-font-size: 24px;
-line-height: 18px;
-color: #3FBC7B;
-}
-
-
-@mixin Text-Style-38 {
-font-family: Gotham Pro;
-font-style: normal;
-font-weight: 500;
-font-size: 28px;
-line-height: 53px;
-color: #3A3A3A;
-}
-// ------------news
-@mixin Text-Style-39 {
-   font-family: OpenSans;
-font-style: normal;
-font-weight: normal;
-font-size: 12px;
-line-height: 16px;
-letter-spacing: 0.02em;
-color: #FFFFFF;
-}
-@mixin Text-Style-40 {
-   font-family: Gotham Pro;
-font-style: normal;
-font-weight: 500;
-font-size: 19px;
-line-height: 18px;
-letter-spacing: 0.02em;
-color: #FFFFFF;
-}
-@mixin Text-Style-41 {
-font-family: OpenSans;
-font-style: normal;
-font-weight: normal;
-font-size: 12px;
-line-height: 145.66%;
-letter-spacing: 0.02em;
-color: #FFFFFF;
-}
-@mixin Text-Style-42 {
-    font-family: Gotham Pro;
-font-style: normal;
-font-weight: bold;
-font-size: 8px;
-line-height: 136.73%;
-letter-spacing: 0.02em;
-text-transform: uppercase;
-color: #FFFFFF;
-}
-@mixin Text-Style-43 {
-
-}
-@mixin Text-Style-44 {
-
-}
+};
 
 // =========================================================================
 @font-face {
