@@ -55,7 +55,6 @@
   }
 
   &__title {
-    background-color: #bee1ff;
     @include Text-Style-21;
     font-weight: 700;
     flex: 0 1 100%;
@@ -65,7 +64,6 @@
     }
   }
   &__text {
-    background-color: #ff9419;
     @include Text-Style-22;
     flex: 0 1 100%;
     text-transform: lowercase;
@@ -77,7 +75,6 @@
   }
 
   &__button {
-    background-color: cornflowerblue;
     position: relative;
     z-index: 2;
   @media screen and (max-width: 1270px) {
@@ -97,9 +94,7 @@
 //                  spleasure
 // ====================================================
 .container-spleasure {
-  // max-width: 100%;
   max-width: 44vw;
-  // margin: 0px auto;
 @media screen and (max-width: 1270px) {
   max-width: 85vw;  
 } 
@@ -109,7 +104,6 @@
   width: 100%;
   height: 100%;
   &__body {
-    // @include jucc();
     width: 100%;
     height: 100%;
     position: relative;
@@ -132,9 +126,6 @@
 // ---------------------------------------------------------------
 // !!!!!!!!!! управление расположением содержимого слайда!!!!!!!!!!!
 .slick-slide {
-  // text-align: left;
-  // text-align: center;
-  // text-align: right ;
   flex: 0 1 100%;
 }
 
@@ -153,7 +144,6 @@
 }
 // ----------------------------------
 .arrows-spleasure {
-  // @include flex();
   flex: 0 1 100%;
   @include juca();
 
@@ -165,9 +155,8 @@
     top: 50%;
     transform: translate(0%, -50%);
     border-radius: 50%;
-    background: #f8f9f7;
     @include anim(0.2s);
-
+    background: #F8F9F7;
     &:hover{ 
       background: $color1;
     }

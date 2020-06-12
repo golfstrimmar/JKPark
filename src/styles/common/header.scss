@@ -184,9 +184,12 @@ opacity: 0.59;
   height: 100%;
   top: 0%;
   left: -400px; 
-  @media screen and (max-width:  520px) { left: -520px;  }   
+  @media screen and (max-width:  520px) { left: -520px  }   
   @include anim(0.5s);
   padding: 2% 0% 0% 1%;
+  @media screen and (max-width: 500px) {
+   padding: 2% 0% 0% 5%;
+  }
   }
 
 &__phone{

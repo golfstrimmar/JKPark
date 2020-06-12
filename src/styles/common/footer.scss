@@ -3,7 +3,6 @@
 @import "common/fonts";
 
 .footer {
-  // background-color: #246eb9;
 
   &__body {
     position: relative;
@@ -42,7 +41,7 @@
   &__column {
     flex: 0 1 10%;
    @media screen and (max-width: 530px) {
-    padding: 2% 3% 0% 3%; 
+    padding: 5% 3% 0% 3%; 
     margin: 0% 0% 0% 0%; 
    }
     &:first-child {
@@ -52,23 +51,34 @@
        flex: 0 1 100%;
        @include jucc();margin: 0% 0% 0% 0%; 
       }
-    }
+    } 
     &:nth-child(2){
       margin: 0% 2% 0% 6.8%;  
       @media screen and (max-width: 1120px) {
-             margin: 0% 1% 0% 1%;   
+             margin: 0% 1% 0% 5%;   
 
       }
+ @media screen and (max-width:  968px) { 
+         margin: 0% auto 0% auto; 
+        }  
+
       @media screen and (max-width: 530px) {
        flex: 0 1 40%;  margin: 0% 0% 0% 0%; 
       }
+     
+
     }
     &:nth-child(3){
       margin: 0% auto 0% 4%;
         @media screen and (max-width: 1120px) {
-             margin: 0% auto 0% 0%;                               
+             margin: 0% auto 0% 4%;                               
 
       } 
+
+ @media screen and (max-width:  968px) { 
+        margin: 0% 0% 0% 0%; 
+        }  
+
        @media screen and (max-width: 530px) {
        flex: 0 1 40%; margin: 0% 0% 0% 0%; 
       }   
@@ -168,13 +178,10 @@
 
 // ---------------
 .social-nav-footer {  
-  // .social-nav__body
 
   &__body {
  @include juce();  
   }
-
-  // .social-nav__icon
 
   &__icon {
     flex: 0 1 30px; 
@@ -212,22 +219,10 @@
    }
    @media screen and (max-width: 350px) {
     flex: 0 1 100%; 
-   margin: 3% 0% 0% 0%;  
+   margin: 0% 0% 0% 0%;     
    }
   }
 
-  &__logo {
-    flex: 0 1 40%;
-    @include juce();
-    p {
-      @include Text-Style-15;
-    }
-    @media screen and (max-width: 950px) {
-     flex: 0 1 100%; 
-     @include jucc();
-    }
-    @media screen and (max-width: 350px) {
-     margin: 50% 0% 0% 0%;   
-    }
+ 
   }
-}
+

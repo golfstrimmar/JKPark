@@ -4,7 +4,6 @@
 
 .manager {
 
-
 		&__content {
 padding: 0% 0% 0% 0%;
 margin: 4% 0% 0% 0%;
@@ -12,14 +11,10 @@ background-color: $color1;
     }
     
 }
-
 .content-manager {
-
 		&__body {
       @include jucb();
 		}
-
-		// .content-manager__item
 
 		&__item {
       flex: 0 1 50%;
@@ -55,7 +50,6 @@ background-color: $color1;
   }
 
   &__title {
-    background-color: #BEE1FF;
     @include Text-Style-28;
     font-weight: 700;
     letter-spacing: 0.4px; 
@@ -71,13 +65,11 @@ background-color: $color1;
   }
   &__text {
     &_one {
-      background-color: #FF9419;
       @include Text-Style-29;
       flex: 0 1 80%; 
       padding: 3% 0% 0% 0%; 
     }
     &_two {
-      background-color: #848789;
       @include Text-Style-29;
       flex: 0 1 100%;
       padding: 16.8% 0% 0% 0%;
@@ -87,7 +79,6 @@ background-color: $color1;
       }  
     }
     &_three {
-      background-color: #d24a4c;
       @include Text-Style-30;
       line-height: 1;
       text-transform: uppercase;
@@ -96,7 +87,6 @@ background-color: $color1;
       padding: 1% 0% 0% 0%;  
     }
     &_four {
-      background-color: #64c29e;
       @include Text-Style-31;
       flex: 0 1 100%;
       padding: 2% 0% 0% 0%;  
@@ -105,7 +95,6 @@ background-color: $color1;
 
   &__button{
    flex: 0 1 100%;
-   background: blue;
    padding: 3.5% 0% 0% 0%;
    .button-main-white__body{
     width: 268px;
@@ -122,7 +111,6 @@ font-size: 10px;
    }
   }
 }
- 
 
 // ====================================================
 //                  slider-manager
@@ -167,9 +155,6 @@ font-size: 10px;
 // ---------------------------------------------------------------
 // !!!!!!!!!! управление расположением содержимого слайда!!!!!!!!!!!
 .slick-slide {
-  // text-align: left;
-  // text-align: center;
-  // text-align: right ;
   flex: 0 1 100%;
 }
 
