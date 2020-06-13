@@ -1,0 +1,172 @@
+.choise {
+  &__body {
+    @include jucc();
+    width: 100%;
+    height: 100%;
+    padding: 3% 4% 3% 4%;
+    margin: 3% 0% 0% 0%;
+    background: #F8F9F7;
+  }
+  //  --------ширина шапки--------
+  &__head {
+    flex: 0 1 100%;
+  }
+  // ----------ширина контента-----
+  &__content {
+    flex: 0 1 100%;
+    padding: 2% 0% 0% 0%;
+  }
+}
+// ----------------шапка блока---------------------
+.choise-head {
+  width: 100%;
+  height: 100%;
+  &__body {
+    position: relative;
+    @include jucc();
+    text-align: left;
+    width: 100%;
+    height: 100%;
+    flex: 0 1 100%;
+    padding: 0% 0% 0% 0%;
+  }
+
+  &__title {
+    position: relative;
+    z-index: 2;
+
+    @include Text-Style-105;
+    // line-height: 1;
+    text-transform: lowercase;
+    flex: 0 1 100%;
+    padding: 0% 0% 0% 0%;
+  }
+}
+// ---------управление единичными блоками---------------------
+.content-choise {
+  &__body {
+    @include jucb();
+  }
+  // ----ширина единичного блока-----
+  &__item {
+    flex: 0 1 20%;
+     @media screen and (max-width:  1315px) { 
+      flex: 0 1 25%;
+      } 
+     @media screen and (max-width:  1090px) { 
+      flex: 0 1 100%; 
+padding: 5% 0% 0% 0%;
+      } 
+
+    &:nth-child(3){
+flex: 0 1 15%;
+ @media screen and (max-width:  1090px) { 
+      flex: 0 1 100%; 
+      
+      } 
+    }
+    &:nth-child(4){
+flex: 0 1 10%;
+ @media screen and (max-width:  1090px) { 
+      flex: 0 1 100%; 
+      
+      } 
+    }
+  }
+  &__button {
+    flex: 0 1 20%;
+    @include juce();
+    @media screen and (max-width:  1315px) { 
+      flex: 0 1 100%;
+      @include jucc();
+      padding: 5% 0% 0% 0%;
+      } 
+    .button-main__body{
+      width: 170px; 
+      margin: 0% 0% 0% 0%; 
+    }
+  }
+}
+// =====единичный блок=========
+.tiny-choise {
+  width: 100%;
+  height: 100%;
+
+  &__title {
+    @include Text-Style-106;
+    line-height: 1;
+    flex: 0 1 100%;
+  }
+  &__body {
+    @include jucs();
+    width: 100%;
+    height: 100%;
+    // padding: 5% 0% 0% 0%;
+  }
+
+  &__text {
+    @include center();
+    width: 42px;
+    height: 35px;
+    @include Text-Style-107;
+    background: #ffffff;
+    line-height: 1;
+    text-transform: uppercase;
+    margin: 10px 3px 0px 0px;  
+     @include anim(0.2s);
+    &:hover{
+    background: #825946;
+      }
+  }
+  &__text-rubic{
+  @include Text-Style-108;
+  background: #ffffff;
+text-align: start;
+padding: 15px 0px 15px 20px;  
+margin: 10px 0px;
+position: relative;
+
+span{
+   position: relative;
+  position: absolute;
+  bottom: 0%; 
+  left: 12%;
+  transform: translate(0%,200%);      
+  display: block;
+  width: 50%;
+  height: 2px; 
+  background: #825946;  
+ @media screen and (max-width:  1190px) { 
+  left: 0%;
+   
+  left: 20px;
+   } 
+
+  &:after{
+   content: "";
+   background-color: $color1;
+   position: absolute;
+   width: 11px;
+   height: 11px;
+   top: 0%; 
+   left: 0%;
+   z-index: 2;
+   border-radius: 50%;
+    transform: translate(-50%,-50%);
+    }
+  &:before{
+   content: "";
+   background-color: $color1;
+   position: absolute;
+   width: 11px;
+   height: 11px;
+   top: 0%; 
+   right: 0%;
+   z-index: 2;
+   border-radius: 50%;
+    transform: translate(50%,-50%);
+    }
+
+}
+  }
+}
