@@ -196,7 +196,15 @@ line-height: 13px;
 color: #464646;
 }
 
-
+@mixin Text-Style-110{
+font-family: OpenSans;
+font-style: normal;
+font-weight: 600;
+font-size: 13px;
+line-height: 18px;
+letter-spacing: 0.02em;
+color: #FFFFFF;
+};
 
 
 // =----------------------ubantu;-----------------------------
@@ -463,12 +471,26 @@ color: #252D34;
 };
 
 
+@mixin Text-Style-109{
+font-family: Gotham Pro;
+font-style: normal;
+font-weight: 500;
+font-size: 23px;
+line-height: 110.7%;
+color: #FFFFFF;
+};
 
 
 
 
-
-
+@mixin Text-Style-101{
+font-family: Gotham Pro;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 13px;
+color: #B1BDC9;
+};
 
 @mixin Text-Style-1 {
 font-family: Gotham Pro;
