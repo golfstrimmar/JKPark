@@ -8843,7 +8843,7 @@ $(Document).ready(function () {
 $(Document).ready(function () {
   $(".slider-near-js").slick({
     arrows: true,
-    dots: false,
+    dots: true,
     slidesToShow: 1,
     // infinite: false,
     slideToscroll: 1,
@@ -8852,8 +8852,116 @@ $(Document).ready(function () {
     // fade: true,
     cssEase: 'linear',
     // rows: 1,
-    // nextArrow: $(".arrows-slider-bild__arrow_next"),
-    // prevArrow: $(".arrows-slider-bild__arrow_prev"),
+    nextArrow: $(".arrows-nearhome__arrow_next"),
+    prevArrow: $(".arrows-nearhome__arrow_prev"),
+    responsive: [
+      {
+        breakpoint: 1100,
+        settings: {
+          arrows: false,
+          // centerMode: true,
+          // centerPadding: "40px",
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 840,
+        settings: {
+          arrows: false,
+
+          // centerPadding: "40px",
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+});
+$(Document).ready(function () {
+  $(".slider-children-js").slick({
+    arrows: true,
+    dots: true,
+    slidesToShow: 1,
+    // infinite: false,
+    slideToscroll: 1,
+    speed: 800,
+    easing: "ease",
+    // fade: true,
+    cssEase: 'linear',
+    // rows: 1,
+    nextArrow: $(".arrows-children__arrow_next"),
+    prevArrow: $(".arrows-children__arrow_prev"),
+    responsive: [
+      {
+        breakpoint: 1100,
+        settings: {
+          arrows: false,
+          // centerMode: true,
+          // centerPadding: "40px",
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 840,
+        settings: {
+          arrows: false,
+
+          // centerPadding: "40px",
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+});
+$(Document).ready(function () {
+  $(".slider-parking-js").slick({
+    arrows: true,
+    dots: true,
+    slidesToShow: 1,
+    // infinite: false,
+    slideToscroll: 1,
+    speed: 800,
+    easing: "ease",
+    // fade: true,
+    cssEase: 'linear',
+    // rows: 1,
+    nextArrow: $(".arrows-parking__arrow_next"),
+    prevArrow: $(".arrows-parking__arrow_prev"),
+    responsive: [
+      {
+        breakpoint: 1100,
+        settings: {
+          arrows: false,
+          // centerMode: true,
+          // centerPadding: "40px",
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 840,
+        settings: {
+          arrows: false,
+
+          // centerPadding: "40px",
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+});
+$(Document).ready(function () {
+  $(".slider-tradition-js").slick({
+    arrows: true,
+    dots: true,
+    slidesToShow: 1,
+    // infinite: false,
+    slideToscroll: 1,
+    speed: 800,
+    easing: "ease",
+    // fade: true,
+    cssEase: 'linear',
+    // rows: 1,
+    nextArrow: $(".arrows-tradition__arrow_next"),
+    prevArrow: $(".arrows-tradition__arrow_prev"),
     responsive: [
       {
         breakpoint: 1100,
