@@ -11,7 +11,7 @@
 @import "common/header.scss";
 @import "common/slick.scss";
 
-@import "index/content/some-block.scss";
+// @import "index/content/some-block.scss";
 @import "index/content/slider-top.scss";
 @import "index/content/nav.scss";
 @import "index/content/location.scss";
@@ -25,6 +25,11 @@
 @import "index/content/choise.scss";
 @import "index/content/slider-bild.scss"; 
 
+@import "about/fool-about.scss"; 
+@import "about/parkoviy.scss"; 
+@import "about/video.scss";  
+@import "about/nearhome.scss";  
+
 
 
 
@@ -37,7 +42,8 @@
 
 .page {
   position: absolute;
-  max-width: 100%;
+  // max-width: 100%;
+  width: 100%;
   min-height: 100%;
   top: 0;
   left: 0;

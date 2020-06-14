@@ -1,0 +1,63 @@
+.parkoviy{ 
+  &__body{
+     position: relative;
+     @include jucb();
+     width: 100%;
+     height: 100%;
+      padding: 5% 5% 5% 4%; 
+      background: #F3F3F3;  
+  }
+
+.bg{
+  position: absolute;
+  width: 40%;
+  height: 50%;
+  top: 50%;
+  left: 30%;
+}
+  &__content {  
+position: relative;
+flex: 0 1 100%;
+padding: 0% 0% 0% 0%;
+}
+  }
+
+.content-parkoviy{
+  &__body {  
+position: relative;
+@include jucb();
+padding: 0% 0% 0% 0%;
+}
+&__item {  
+flex: 0 1 20%;
+padding: 0% 0% 0% 0%;
+ @media screen and (max-width:  1400px) { 
+    flex: 0 1 100%;
+    } 
+&:nth-child(2){
+  flex: 0 1 52%; 
+  @media screen and (max-width:  1400px) { 
+    flex: 0 1 100%;
+    padding: 5% 0% 0% 0%;
+    }
+}
+}
+}
+
+.parkoviy-item-icons{
+  &__body{
+ @media screen and (max-width:  1400px) {  
+   @include jucb();
+  } 
+ }
+  &__item{
+  padding: 0% 0% 15% 0%; 
+   @media screen and (max-width:  1400px) { 
+    flex: 0 1 30%;
+    } 
+    @media screen and (max-width:  940px) { 
+      flex: 0 1 100%;
+      padding: 0% 0% 2% 0%;
+      } 
+  }
+}

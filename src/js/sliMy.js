@@ -239,3 +239,39 @@ $(Document).ready(function () {
     ],
   });
 });
+$(Document).ready(function () {
+  $(".slider-near-js").slick({
+    arrows: true,
+    dots: false,
+    slidesToShow: 1,
+    // infinite: false,
+    slideToscroll: 1,
+    speed: 800,
+    easing: "ease",
+    // fade: true,
+    cssEase: 'linear',
+    // rows: 1,
+    // nextArrow: $(".arrows-slider-bild__arrow_next"),
+    // prevArrow: $(".arrows-slider-bild__arrow_prev"),
+    responsive: [
+      {
+        breakpoint: 1100,
+        settings: {
+          arrows: false,
+          // centerMode: true,
+          // centerPadding: "40px",
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 840,
+        settings: {
+          arrows: false,
+
+          // centerPadding: "40px",
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+});

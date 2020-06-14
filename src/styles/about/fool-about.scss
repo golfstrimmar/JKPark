@@ -1,0 +1,31 @@
+.foolscreen-about{
+
+ &__body{
+width: 100%;
+min-height: 100vh;
+@include fdc();
+position: relative;
+
+padding: 19% 0% 0% 9%;
+}
+
+&__title{
+flex: 0 1 100%;
+position: relative;z-index: 2;
+@include Text-Style-6;
+line-height: 1;
+}
+
+&__text{
+width: 70%;  
+position: relative;z-index: 2;
+@include Text-Style-7;
+line-height: 1;
+padding: 5% 0% 0% 0%;
+}
+
+
+
+
+
+}

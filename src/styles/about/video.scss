@@ -1,0 +1,133 @@
+// =======================================================
+//                  block-trips                           
+// =======================================================
+.video{ 
+  &__body{
+     position: relative;
+     @include jucs();
+     width: 100%;
+     height: 100%;
+     padding: 7% 0% 36% 11%; 
+  }
+&__title{
+position: relative;z-index: 2;
+@include Text-Style-115;
+@media screen and (max-width:  450px) { font-size: 30px;  } 
+}
+// ----------ширина контента-----
+  &__content {  
+flex: 0 1 100%;
+padding: 0% 0% 0% 0%;
+
+}
+
+&__links{
+flex: 0 1 100%;
+.links-about__body{
+  padding: 3% 0% 0% 5%;
+  @media screen and (max-width:  1100px) { @include jucb();  padding: 3% 0% 0% 0%; }
+  @media screen and (max-width:  750px) { @include fdc();  padding: 3% 0% 0% 0%; }
+
+}
+.link{
+flex: 0 1 20%;
+@media screen and (max-width:  1100px) {  flex: 0 1 30%; @include jucc();} 
+@media screen and (max-width:  750px) {  padding: 2% 0% 0% 0%;} 
+}
+
+
+
+}
+  }
+
+.content-video{
+  &__body {
+    width: 100%;
+    height: 100%;  
+position: relative;
+@include jucs();
+padding: 0% 0% 0% 0%;
+@media screen and (max-width:  750px) { @include fdc(); @include alis(); } 
+}
+&__button{
+  .button-main-white__body{
+  width: 140px;
+height: 42px;  
+margin-right: 20px; 
+background-color: transparent;
+span{
+  @include Text-Style-120;
+  text-transform: lowercase;
+  color: $color5;
+  line-height: 1;
+}
+&:hover{
+  background-color: $color5;
+span{
+  color: #282828;
+}
+  }
+
+  }
+
+}
+
+&__item {  
+flex: 0 1 100%;padding: 2% 0% 0% 0%;
+@media screen and (max-width:  750px) { flex: 0 1 30%;  }  
+}
+}
+// =====единичный блок=========
+.tiny-video {
+  width: 100%;
+  height: 100%;
+  &__body {
+    position: relative;
+    @include jucs(); 
+    @include alic();
+    text-align: left;
+    width: 100%;
+    height: 100%;
+    padding: 0% 0% 0% 0%;
+  }
+
+ 
+ 
+  &__button {
+    
+    position: relative;
+    z-index: 2;
+    flex: 0 1 60px;
+    padding: 0% 0% 0% 0%;
+    .button-main-white__body{
+      width: 59px;
+height: 59px;
+border-radius: 50%;
+background: #3FBC7B;
+span{
+ padding: 0px 0px 0px 4px; 
+}
+    }
+  &:hover{
+  .button-main-white__body{
+    background: #4B4F53;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+  }
+    }
+  }
+
+   &__title {
+    position: relative;
+    z-index: 2; 
+    @include Text-Style-116;
+    line-height: 1;
+    text-transform: uppercase;
+    flex: 0 1 20%;
+    padding: 0% 3% 0% 3%; 
+    @media screen and (max-width:  750px) {  flex: 0 1 50%; }    
+    @media screen and (max-width:  450px) {  flex: 0 1 80%; }    
+    @media screen and (max-width:  350px) {  flex: 0 1 100%; padding: 2% 0% 0% 0%;}     
+  }
+}
+
+// --------------------------------

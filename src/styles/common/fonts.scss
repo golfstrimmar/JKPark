@@ -118,7 +118,7 @@ font-style: normal;
 font-weight: normal;
 font-size: 16px;
 line-height: 26px;
-color: #252D34;
+color: #363636;
 }
 
 @mixin Text-Style-24 {
@@ -205,6 +205,22 @@ line-height: 18px;
 letter-spacing: 0.02em;
 color: #FFFFFF;
 };
+
+
+
+
+
+
+
+@mixin Text-Style-120{
+font-family: OpenSans;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 58px;
+color: #282828;
+};
+
 
 
 // =----------------------ubantu;-----------------------------
@@ -419,6 +435,26 @@ line-height: 18px;
 color: #3FBC7B;
 }
 
+@mixin Text-Style-115{
+font-family: Gotham Pro;
+font-style: normal;
+font-weight: bold;
+font-size: 46px;
+line-height: 85px;
+letter-spacing: 1px;
+color: #FFFFFF;
+};
+
+@mixin Text-Style-116{
+ font-family: Gotham Pro;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 13px;
+letter-spacing: 1px;
+text-transform: uppercase;
+color: #FFFFFF;
+};
 
 
 
@@ -543,7 +579,7 @@ color: #FFFFFF;
 @mixin Text-Style-6 {
 font-family: Gotham Pro;
 font-style: normal;
-font-weight: bold;
+font-weight: 900;
 font-size: 80px;
 line-height: 91px;
 letter-spacing: 1px;
@@ -558,7 +594,6 @@ font-weight: 900;
 font-size: 40px;
 line-height: 46px;
 color: #373737;
-text-transform: lowercase;
 
 }
 

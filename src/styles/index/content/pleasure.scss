@@ -29,15 +29,15 @@
   &__item1 {
     flex: 0 1 45%;
     padding: 1.4% 0% 0% 0%;
-      @media screen and (max-width: 1270px) {
-     flex: 0 1 100%;
-     @include jucc(); 
+    @media screen and (max-width: 1270px) {
+      flex: 0 1 100%;
+      @include jucc();
     }
   }
   &__item2 {
     flex: 0 1 52.4%;
     @media screen and (max-width: 1270px) {
-     flex: 0 1 100%;
+      flex: 0 1 100%;
     }
   }
 }
@@ -51,54 +51,44 @@
     text-align: left;
     width: 100%;
     height: 100%;
-       
   }
 
   &__title {
     @include Text-Style-21;
     font-weight: 700;
     flex: 0 1 100%;
-        @media screen and (max-width: 1270px) {
-   text-align: center;
-     padding: 0% 0% 0% 0%;
+    @media screen and (max-width: 1270px) {
+      text-align: center;
+      padding: 0% 0% 0% 0%;
     }
   }
   &__text {
     @include Text-Style-22;
     flex: 0 1 100%;
-    text-transform: lowercase;
     padding: 7.6% 5% 0% 0%;
-      @media screen and (max-width: 1270px) {
-   text-align: center;
-     padding: 0% 0% 0% 0%;
+    @media screen and (max-width: 1270px) {
+      text-align: center;
+      padding: 0% 0% 0% 0%;
     }
   }
 
   &__button {
     position: relative;
     z-index: 2;
-  @media screen and (max-width: 1270px) {
-     flex: 0 1 100%;
-     @include jucc();  
+    @media screen and (max-width: 1270px) {
+      flex: 0 1 100%;
+      @include jucc();
     }
     padding: 6.3% 0% 5% 0%;
- 
   }
 }
 
-// =======================================================
-//               end of   block-pleasure
-// =======================================================
-
-// ====================================================
-//                  spleasure
-// ====================================================
+// -----------
 .container-spleasure {
   max-width: 44vw;
-@media screen and (max-width: 1270px) {
-  max-width: 85vw;  
-} 
-
+  @media screen and (max-width: 1270px) {
+    max-width: 85vw;
+  }
 }
 .spleasure {
   width: 100%;
@@ -108,7 +98,7 @@
     height: 100%;
     position: relative;
   }
- 
+
   // ---------------------------------------------------------------
   //  !!!!!!!!!управление шириной содержимого  одного слайда!!!!!!!!!!!!!!!!!!
   &__slide {
@@ -120,6 +110,7 @@
   &__slides {
     width: 100%;
     height: 100%;
+    padding: 0% 0% 0% 0%;
   }
 }
 
@@ -128,7 +119,9 @@
 .slick-slide {
   flex: 0 1 100%;
 }
-
+.slick-current {
+  margin: 0% 0% 0% 0%;
+}
 // ===========================================
 .spleasure-tiny {
   width: 100%;
@@ -156,8 +149,8 @@
     transform: translate(0%, -50%);
     border-radius: 50%;
     @include anim(0.2s);
-    background: #F8F9F7;
-    &:hover{ 
+    background: #f8f9f7;
+    &:hover {
       background: $color1;
     }
     img {
@@ -165,23 +158,20 @@
       z-index: 500;
       width: 30%;
       height: 50%;
-      top: 50%; 
-      transform: translate(90%, -50%); 
-    }  
-      &_prev {
-        left: -14px;
-      }
+      top: 50%;
+      transform: translate(90%, -50%);
+    }
+    &_prev {
+      left: -14px;
+    }
 
-      &_next {
-        right: -14px;
-        img {
-          transform: (translate(120%, -50%) rotate(180deg));      
-        }
+    &_next {
+      right: -14px;
+      img {
+        transform: (translate(120%, -50%) rotate(180deg));
       }
     }
- 
+  }
 }
 
-// ====================================================
-//                  end of spleasure
-// ====================================================
+
