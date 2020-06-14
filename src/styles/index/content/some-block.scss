@@ -226,289 +226,289 @@
 // ====================================================
 //                  slider-top
 // ====================================================
-.container-top {
-  max-width: 950px;
-  // max-width: 100vw;
-  margin: 0px auto;
-  outline: 4px solid #d24a4c;
-  @media screen and (max-width: 960px) {
-    max-width: 100vw;
-  }
-}
-.slider-top {
-  width: 100%;
-  height: 100%;
-  &__body {
-    @include jucc();
-    width: 100%;
-    height: 100%;
-    position: relative;
-  }
-  &__head {
-  }
-  &__arrows {
-  }
-  // ---------------------------------------------------------------
-  //  !!!!!!!!!управление шириной содержимого  одного слайда!!!!!!!!!!!!!!!!!!
-  &__slide {
-    // max-width: 200px;
-    max-width: 80%;
-  }
-  // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-  // ----------------------------------------------------------------
+// .container-top {
+//   max-width: 950px;
+//   // max-width: 100vw;
+//   margin: 0px auto;
+//   outline: 4px solid #d24a4c;
+//   @media screen and (max-width: 960px) {
+//     max-width: 100vw;
+//   }
+// }
+// .slider-top {
+//   width: 100%;
+//   height: 100%;
+//   &__body {
+//     @include jucc();
+//     width: 100%;
+//     height: 100%;
+//     position: relative;
+//   }
+//   &__head {
+//   }
+//   &__arrows {
+//   }
+//   // ---------------------------------------------------------------
+//   //  !!!!!!!!!управление шириной содержимого  одного слайда!!!!!!!!!!!!!!!!!!
+//   &__slide {
+//     // max-width: 200px;
+//     max-width: 80%;
+//   }
+//   // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//   // ----------------------------------------------------------------
 
-  &__slides {
-    width: 100%; 
-    height: 100%;
-  }
-}
+//   &__slides {
+//     width: 100%; 
+//     height: 100%;
+//   }
+// }
 
-// ---------------------------------------------------------------
-// !!!!!!!!!! управление расположением содержимого слайда!!!!!!!!!!!
-.slick-slide {
-  // text-align: left;
-  // text-align: center;
-  // text-align: right ;
-  flex: 0 1 20%; 
-}
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-// ---------------------------------------------
+// // ---------------------------------------------------------------
+// // !!!!!!!!!! управление расположением содержимого слайда!!!!!!!!!!!
+// .slick-slide {
+//   // text-align: left;
+//   // text-align: center;
+//   // text-align: right ;
+//   flex: 0 1 20%; 
+// }
+// // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// // ---------------------------------------------
 
-// =============шапка слайдера=============================
-.head-tiny {
-  @include jucc();
-  width: 100%;
-  height: 100%;
-  // !!!!!!!!!!!!!управление шириной шапки слайдера!!!!!!!!!!!!!!!!!!!!!!!
-  &__body {
-    position: relative;
-    text-align: left;
-    @include flex();
-    flex: 0 1 50%;
-  }
-  // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// // =============шапка слайдера=============================
+// .head-tiny {
+//   @include jucc();
+//   width: 100%;
+//   height: 100%;
+//   // !!!!!!!!!!!!!управление шириной шапки слайдера!!!!!!!!!!!!!!!!!!!!!!!
+//   &__body {
+//     position: relative;
+//     text-align: left;
+//     @include flex();
+//     flex: 0 1 50%;
+//   }
+//   // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-  // &__bg {
-  // position: absolute;
-  // top: 0;
-  // left: 0;
-  // width: 100%;
-  // padding: 0px 0px 10% 0px;
-  // }
+//   // &__bg {
+//   // position: absolute;
+//   // top: 0;
+//   // left: 0;
+//   // width: 100%;
+//   // padding: 0px 0px 10% 0px;
+//   // }
 
-  &__icon {
-    position: relative;
-    z-index: 2;
-    flex: 0 1 100%;
-    background-color: #246eb9;
-  }
+//   &__icon {
+//     position: relative;
+//     z-index: 2;
+//     flex: 0 1 100%;
+//     background-color: #246eb9;
+//   }
 
-  &__title {
-    position: relative;
-    z-index: 2;
-    flex: 0 1 100%;
-    @include Text-Style-9;
-    line-height: 1;
-    text-transform: uppercase;
-    background-color: #9fff0f;
-  }
+//   &__title {
+//     position: relative;
+//     z-index: 2;
+//     flex: 0 1 100%;
+//     @include Text-Style-9;
+//     line-height: 1;
+//     text-transform: uppercase;
+//     background-color: #9fff0f;
+//   }
 
-  &__text {
-    position: relative;
-    z-index: 2;
-    flex: 0 1 100%;
-    &_one {
-      flex: 0 1 100%;
-      @include Text-Style-9;
-      line-height: 1;
-      text-transform: uppercase;
-    }
-    &_two {
-      background-color: #193549;
-      flex: 0 1 100%;
-      @include Text-Style-9;
-      line-height: 1;
-      text-transform: uppercase;
-    }
-    &_three {
-      background-color: #e628ff;
-      flex: 0 1 100%;
-      @include Text-Style-9;
-      line-height: 1;
-      text-transform: uppercase;
-    }
-    &_four {
-      background-color: #ff9419;
-      flex: 0 1 100%;
-      @include Text-Style-9;
-      line-height: 1;
-      text-transform: uppercase;
-    }
-  }
+//   &__text {
+//     position: relative;
+//     z-index: 2;
+//     flex: 0 1 100%;
+//     &_one {
+//       flex: 0 1 100%;
+//       @include Text-Style-9;
+//       line-height: 1;
+//       text-transform: uppercase;
+//     }
+//     &_two {
+//       background-color: #193549;
+//       flex: 0 1 100%;
+//       @include Text-Style-9;
+//       line-height: 1;
+//       text-transform: uppercase;
+//     }
+//     &_three {
+//       background-color: #e628ff;
+//       flex: 0 1 100%;
+//       @include Text-Style-9;
+//       line-height: 1;
+//       text-transform: uppercase;
+//     }
+//     &_four {
+//       background-color: #ff9419;
+//       flex: 0 1 100%;
+//       @include Text-Style-9;
+//       line-height: 1;
+//       text-transform: uppercase;
+//     }
+//   }
 
-  &__button {
-    background-color: #d24a4c;
-    position: relative;
-    z-index: 2;
-    flex: 0 1 100%;
-    a {
-      @include jucs();
-    }
-    span {
-      background-color: #9e9e9e;
-      @include Text-Style-9;
-      line-height: 1;
-      text-transform: uppercase;
-    }
-  }
-}
+//   &__button {
+//     background-color: #d24a4c;
+//     position: relative;
+//     z-index: 2;
+//     flex: 0 1 100%;
+//     a {
+//       @include jucs();
+//     }
+//     span {
+//       background-color: #9e9e9e;
+//       @include Text-Style-9;
+//       line-height: 1;
+//       text-transform: uppercase;
+//     }
+//   }
+// }
 
-// ===========================================
-.slider-top-tiny {
-  width: 100%;
-  height: 100%;
-  &__body {
-    position: relative;
-    text-align: left;
-    @include flex();
-  }
-  // &__bg {
-  // position: absolute;
-  // top: 0;
-  // left: 0;
-  // width: 100%;
-  // padding: 0px 0px 10% 0px;
-  // }
+// // ===========================================
+// .slider-top-tiny {
+//   width: 100%;
+//   height: 100%;
+//   &__body {
+//     position: relative;
+//     text-align: left;
+//     @include flex();
+//   }
+//   // &__bg {
+//   // position: absolute;
+//   // top: 0;
+//   // left: 0;
+//   // width: 100%;
+//   // padding: 0px 0px 10% 0px;
+//   // }
 
-  &__icon {
-    position: relative;
-    z-index: 2;
-    flex: 0 1 100%;
-    background-color: #246eb9;
-  }
+//   &__icon {
+//     position: relative;
+//     z-index: 2;
+//     flex: 0 1 100%;
+//     background-color: #246eb9;
+//   }
 
-  &__title {
-    position: relative;
-    background-color: #9fff0f;
-    flex: 0 1 100%;
-    @include Text-Style-9;
-    line-height: 1;
-    text-transform: uppercase;
-  }
+//   &__title {
+//     position: relative;
+//     background-color: #9fff0f;
+//     flex: 0 1 100%;
+//     @include Text-Style-9;
+//     line-height: 1;
+//     text-transform: uppercase;
+//   }
 
-  &__text {
-    position: relative;
-    z-index: 2;
-    flex: 0 1 100%;
-    &_one {
-      flex: 0 1 100%;
-      @include Text-Style-9;
-      line-height: 1;
-      text-transform: uppercase;
-    }
-    &_two {
-      background-color: #193549;
-      flex: 0 1 100%;
-      @include Text-Style-9;
-      line-height: 1;
-      text-transform: uppercase;
-    }
-    &_three {
-      background-color: #e628ff;
-      flex: 0 1 100%;
-      @include Text-Style-9;
-      line-height: 1;
-      text-transform: uppercase;
-    }
-    &_four {
-      background-color: #ff9419;
-      flex: 0 1 100%;
-      @include Text-Style-9;
-      line-height: 1;
-      text-transform: uppercase;
-    }
-  }
+//   &__text {
+//     position: relative;
+//     z-index: 2;
+//     flex: 0 1 100%;
+//     &_one {
+//       flex: 0 1 100%;
+//       @include Text-Style-9;
+//       line-height: 1;
+//       text-transform: uppercase;
+//     }
+//     &_two {
+//       background-color: #193549;
+//       flex: 0 1 100%;
+//       @include Text-Style-9;
+//       line-height: 1;
+//       text-transform: uppercase;
+//     }
+//     &_three {
+//       background-color: #e628ff;
+//       flex: 0 1 100%;
+//       @include Text-Style-9;
+//       line-height: 1;
+//       text-transform: uppercase;
+//     }
+//     &_four {
+//       background-color: #ff9419;
+//       flex: 0 1 100%;
+//       @include Text-Style-9;
+//       line-height: 1;
+//       text-transform: uppercase;
+//     }
+//   }
 
-  &__button {
-    background-color: #d24a4c;
-    position: relative;
-    z-index: 2;
-    flex: 0 1 100%;
-    a {
-      @include jucs();
-    }
-    span {
-      background-color: #9e9e9e;
-      flex: 0 1 100%;
-      @include Text-Style-9;
-      line-height: 1;
-      text-transform: uppercase;
-    }
-  }
-}
+//   &__button {
+//     background-color: #d24a4c;
+//     position: relative;
+//     z-index: 2;
+//     flex: 0 1 100%;
+//     a {
+//       @include jucs();
+//     }
+//     span {
+//       background-color: #9e9e9e;
+//       flex: 0 1 100%;
+//       @include Text-Style-9;
+//       line-height: 1;
+//       text-transform: uppercase;
+//     }
+//   }
+// }
 
-.arrows-slider-top {
-  // @include flex();
-  background-color: #246eb9;
-  flex: 0 1 100%;
-  @include juca();
+// .arrows-slider-top {
+//   // @include flex();
+//   background-color: #246eb9;
+//   flex: 0 1 100%;
+//   @include juca();
 
-  &__arrow {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    top: 50%;
-    transform: translate(0%, -50%);
-    &_prev {
-      left: -2.4%;
-    }
-    &_next {
-      right: -2.4%;
-    }
-  }
-}
-.slick-dots {
-  padding-inline-start: 0px !important;
+//   &__arrow {
+//     position: absolute;
+//     width: 30px;
+//     height: 30px;
+//     border-radius: 50%;
+//     top: 50%;
+//     transform: translate(0%, -50%);
+//     &_prev {
+//       left: -2.4%;
+//     }
+//     &_next {
+//       right: -2.4%;
+//     }
+//   }
+// }
+// .slick-dots {
+//   padding-inline-start: 0px !important;
 
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 100%;
-  transform: translate(5%, -12px);
-  // left: -34px;
-  @include flex();
-  z-index: 3;
-  @media screen and (max-width: 900px) {
-    left: 0;
-  }
-}
+//   position: absolute;
+//   width: 100%;
+//   height: 100%;
+//   top: 100%;
+//   transform: translate(5%, -12px);
+//   // left: -34px;
+//   @include flex();
+//   z-index: 3;
+//   @media screen and (max-width: 900px) {
+//     left: 0;
+//   }
+// }
 
-.slick-dots li button {
-  list-style: none;
-  margin: 0px 5px 0px 0px;
-  font-family: LeagueSpartan;
-  font-size: 10px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  letter-spacing: 4px;
-  color: #000;
-  background-color: transparent;
-}
-.slick-dots li.slick-active {
-  position: relative;
-  button {
-    font-family: LeagueSpartan;
-    font-size: 10px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    letter-spacing: 4px;
-    text-align: center;
-    color: #5da8ef;
-  }
-}
+// .slick-dots li button {
+//   list-style: none;
+//   margin: 0px 5px 0px 0px;
+//   font-family: LeagueSpartan;
+//   font-size: 10px;
+//   font-weight: bold;
+//   font-stretch: normal;
+//   font-style: normal;
+//   letter-spacing: 4px;
+//   color: #000;
+//   background-color: transparent;
+// }
+// .slick-dots li.slick-active {
+//   position: relative;
+//   button {
+//     font-family: LeagueSpartan;
+//     font-size: 10px;
+//     font-weight: bold;
+//     font-stretch: normal;
+//     font-style: normal;
+//     letter-spacing: 4px;
+//     text-align: center;
+//     color: #5da8ef;
+//   }
+// }
 
 // ====================================================
 //                  end of slider-top

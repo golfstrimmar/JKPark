@@ -1,0 +1,138 @@
+.container-photo {
+  max-width: 100vw;
+  margin: 0px auto;
+  @media screen and (max-width: 960px) {
+    max-width: 100vw;
+  }
+}
+.slider-photo {
+  &__body {
+    @include jucs();
+    position: relative;
+    padding: 5% 0% 0% 4%;
+  }
+  &__arrows {
+    position: absolute;
+    z-index: 5;
+    width: 45%;
+    height: 44%;
+    top: 0%;
+    right: 0%;
+    padding: 0% 0% 0% 0%;
+  }
+  &__slide {
+    max-width: 100%;
+  }
+
+  &__slides {
+    width: 100%;
+    height: 100%;
+    padding: 0% 0% 0% 0%;
+    position: relative;
+    overflow: hidden; 
+  }
+}
+.slick-slide {
+  flex: 0 1 100%;
+}
+
+// ===========================================
+.slider-photo-tiny {
+  width: 100%;
+  height: 100%;
+  &__body {
+    position: relative;
+    text-align: left;
+    @include flex();
+    width: 100%;
+    padding: 0% 0% 48% 0%; 
+  }
+
+}
+
+.arrows-slider-photo {
+  background-color: $color5;
+  flex: 0 1 100%;
+  @include juca();
+   &__body{
+  padding: 3% 5% 3% 5%;
+  @include jucs();
+  }
+  &__title{
+  @include Text-Style-120;
+flex: 0 1 100%;
+  }
+  &__text1{
+  @include Text-Style-121;
+  flex: 0 1 100%;
+  padding: 20% 0% 0% 0%;
+  }
+  &__text2{
+  @include Text-Style-122;
+  flex: 0 1 100%;
+  }
+ &__arrow {
+    position: relative;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 40%;
+    transform: translate(0%, -50%);
+    border-radius: 50%;
+    background: $color1;
+    @include anim(0.2s); 
+
+    &:hover{ 
+      background: $color4; 
+    }
+    img {
+      position: absolute;
+      z-index: 500;
+      width: 30%;
+      height: 50%;
+      top: 50%; 
+      transform: translate(90%, -50%); 
+    }  
+      &_prev {left: 5%;}
+
+      &_next {left: 40%;
+        img {
+          transform: (translate(120%, -50%) rotate(180deg));
+        }
+      }
+    }
+}
+
+
+
+.slick-dots {
+  padding-inline-start: 0px !important;
+  position: absolute;
+  width: 100%;
+  // height: 100%;
+  top: 90%;
+  // transform: translate(5%, -12px);
+  left: 0px;
+  @include jucc();
+  z-index: 5;
+  @media screen and (max-width: 900px) {
+    left: 0;
+  }
+}
+
+.slick-dots li button {
+  list-style: none;
+  margin: 0px 10px 0px 10px;
+  background: $color5; 
+  color: transparent; 
+  text-align: center;
+  border-radius: 50%;
+  width: 10px;height: 10px;
+}
+.slick-dots li.slick-active {
+  position: relative;
+  button {
+    color: transparent;
+    background: $color1;
+  }
+}

@@ -29,6 +29,7 @@
 @import "about/parkoviy.scss"; 
 @import "about/video.scss";  
 @import "about/nearhome.scss";  
+@import "about/photo.scss";  
 
 
 
@@ -102,6 +103,13 @@ a {
 visibility: visible;
 
  }
+
+.content-about{
+  background: #FFFFFF;
+box-shadow: inset 0px 0px 40px rgba(1, 56, 120, 0.15);     
+padding: 6% 0% 6% 0%;
+}
+
 
 //  ------------------------------------
 // ==========popup-thanks==============
