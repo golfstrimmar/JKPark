@@ -18,7 +18,7 @@
     height: 44%;
     top: 0%;
     right: 0%;
-    padding: 0% 0% 0% 0%;
+    @media screen and (max-width:  1200px) { width: 480px;height: 240px;  } 
   }
   &__slide {
     max-width: 100%;
@@ -49,27 +49,33 @@
   }
 
 }
-
+// -------------------------
 .arrows-slider-photo {
-  background-color: $color5;
+  background-color: transparent;
   flex: 0 1 100%;
+  // z-index: 25; 
   @include juca();
    &__body{
   padding: 3% 5% 3% 5%;
   @include jucs();
+color: $color5;
   }
   &__title{
   @include Text-Style-120;
+color: $color5;
+
 flex: 0 1 100%;
   }
   &__text1{
   @include Text-Style-121;
   flex: 0 1 100%;
   padding: 20% 0% 0% 0%;
+  color: $color5;
   }
   &__text2{
   @include Text-Style-122;
   flex: 0 1 100%;
+  color: $color5;
   }
  &__arrow {
     position: relative;
@@ -80,8 +86,8 @@ flex: 0 1 100%;
     transform: translate(0%, -50%);
     border-radius: 50%;
     background: $color1;
-    @include anim(0.2s); 
-
+    @include anim(0.1s); 
+    
     &:hover{ 
       background: $color4; 
     }
@@ -93,46 +99,55 @@ flex: 0 1 100%;
       top: 50%; 
       transform: translate(90%, -50%); 
     }  
-      &_prev {left: 5%;}
+      &_prev {left: 5%;
+      }
 
-      &_next {left: 40%;
+      &_next {left: 52%;
         img {
           transform: (translate(120%, -50%) rotate(180deg));
         }
+        @media screen and (max-width:  1200px) {  left: 62%; }  
       }
     }
 }
 
 
 
-.slick-dots {
-  padding-inline-start: 0px !important;
-  position: absolute;
-  width: 100%;
-  // height: 100%;
-  top: 90%;
-  // transform: translate(5%, -12px);
-  left: 0px;
-  @include jucc();
-  z-index: 5;
-  @media screen and (max-width: 900px) {
-    left: 0;
-  }
-}
+// .container-photo{
 
-.slick-dots li button {
-  list-style: none;
-  margin: 0px 10px 0px 10px;
-  background: $color5; 
-  color: transparent; 
-  text-align: center;
-  border-radius: 50%;
-  width: 10px;height: 10px;
-}
-.slick-dots li.slick-active {
-  position: relative;
-  button {
-    color: transparent;
-    background: $color1;
-  }
-}
+// .slick-dots {
+//   padding-inline-start: 0px !important;
+//   position: absolute;
+//   width: 16%;     
+//   background: red;
+//   top: 17%; 
+//   left: 62%;       
+//   // transform: translate(5%, -12px);
+//   // left: 0px;
+//   @include jucc();
+//   z-index: 20; 
+//   @media screen and (max-width: 1200px) {
+//     width: 20%;  
+//   }
+//   @media screen and (max-width: 900px) {
+//     left: 0;
+//   }
+// }
+
+// .slick-dots li button {
+//   list-style: none;
+//   margin: 0px 10px 0px 10px;
+//   background: $color3; 
+//   color: transparent; 
+//   text-align: center;
+//   border-radius: 50%;
+//   width: 10px;height: 10px;
+// }
+// .slick-dots li.slick-active {
+//   position: relative;
+//   button {
+//     color: transparent;
+//     background: $color1;
+//   }
+// }
+// }

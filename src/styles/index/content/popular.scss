@@ -191,7 +191,7 @@ left: 53px;
     border-radius: 50%;
     background: $color1;
     @include anim(0.2s);
-    z-index: 200;
+    z-index: 20;
      @media screen and (max-width: 1200px) {
       bottom: 8px;       
      }

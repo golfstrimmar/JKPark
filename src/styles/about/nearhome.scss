@@ -14,7 +14,7 @@
 } 
 }
  
-.slider-children-js.slick-dots {
+.slick-dots {
   padding-inline-start: 0px !important;
   position: absolute;
   width: 100%;
@@ -29,7 +29,7 @@
   }
 }
  
-.slider-children-js.slick-dots li button {
+.slick-dots li button {
   list-style: none;
   margin: 0px 10px 0px 10px;
   background: $color5; 
@@ -38,7 +38,7 @@
   border-radius: 50%;
   width: 10px;height: 10px;
 }
-.slider-children-js.slick-dots li.slick-active {
+.slick-dots li.slick-active {
   position: relative;
   button {
     color: transparent;
