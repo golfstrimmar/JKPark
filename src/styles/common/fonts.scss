@@ -219,13 +219,13 @@ color: #282828;
 
 
 
-@mixin Text-Style-120{
+@mixin Text-Style-119{
 font-family: OpenSans;
 font-style: normal;
 font-weight: 600;
 font-size: 14px;
 line-height: 58px;
-color: #282828;
+color: $color5; 
 };
 
 
@@ -641,6 +641,15 @@ line-height: 35px;
 color: #282828;
 };
 
+
+@mixin Text-Style-150{
+font-family: Gotham Pro;
+font-style: normal;
+font-weight: bold;
+font-size: 11px;
+line-height: 11px;
+// text-transform: uppercase; 
+};
 // =========================================================================
 @font-face {
   font-family: icomoon;
@@ -673,7 +682,7 @@ color: #282828;
   position: relative;
   &:before {
     position: absolute;
-    @include tr(-50%, -50%, 0px);
+    transform: translate(-50%,-50%);
     top: 50%;
     left: 50%;
     z-index: 100;

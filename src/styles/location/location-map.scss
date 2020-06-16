@@ -1,0 +1,45 @@
+.location-map{
+
+.location-content-img__body{position: relative;
+  min-height: 100vh; 
+}
+.button-main-white{
+  &__body{
+ width: auto;
+ height: 37px; 
+z-index: 2;  
+
+ }
+ 
+  &__link{
+    padding: 0px 9px ;  
+img{margin-right: 8px;} 
+span{@include Text-Style-150;}
+
+}
+}
+
+.location-content{
+&__buttons{
+position: absolute;
+width: 100%; 
+top: 7%; 
+left: 0%; 
+}
+}
+
+.content-buttons{
+
+   &__body{
+  @include jucb();
+  padding: 0% 11% ; 
+  }
+  &__button{
+  @media screen and (max-width:  1300px) {  margin: 10px 0% ; }  
+  }
+}
+
+
+
+
+}

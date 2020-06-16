@@ -1,6 +1,9 @@
-// =======================================================
-//                  block-trips                           
-// =======================================================
+@import "common/mixins";
+@import "common/variables";
+@import "common/fonts";  
+
+
+
 .video{ 
   &__body{
      position: relative;
@@ -56,7 +59,7 @@ height: 42px;
 margin-right: 20px; 
 background-color: transparent;
 span{
-  @include Text-Style-120;
+  @include Text-Style-119;   
   text-transform: lowercase;
   color: $color5;
   line-height: 1;

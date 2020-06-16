@@ -5,7 +5,7 @@
      width: 100%;
      height: 100%;
       padding: 5% 5% 5% 4%; 
-      background: #F3F3F3;  
+      // background: #F3F3F3;  
   }
 
 .bg{
@@ -26,7 +26,6 @@ padding: 0% 0% 0% 0%;
   &__body {  
 position: relative;
 @include jucb();
-padding: 0% 0% 0% 0%;
 }
 &__item {  
 flex: 0 1 20%;
@@ -43,7 +42,9 @@ padding: 0% 0% 0% 0%;
 }
 }
 }
-
+.tiny-location__text {
+   flex: 0 1 60%;
+}
 .parkoviy-item-icons{
   &__body{
  @media screen and (max-width:  1400px) {  

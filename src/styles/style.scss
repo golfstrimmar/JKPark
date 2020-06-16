@@ -1,6 +1,6 @@
 @import "normalize";
 @import "common/null.scss";
-@import "index/content/net.scss";
+// @import "index/content/net.scss";
 
 
 @import "common/mixins";
@@ -11,7 +11,7 @@
 @import "common/header.scss";
 @import "common/slick.scss";
 
-@import "index/content/some-block.scss";
+// @import "index/content/some-block.scss";
 @import "index/content/slider-top.scss";
 @import "index/content/nav.scss";
 @import "index/content/location.scss";
@@ -30,6 +30,11 @@
 @import "about/video.scss";  
 @import "about/nearhome.scss";  
 @import "about/photo.scss";  
+
+@import "location/foolscreen-location.scss";  
+@import "location/location-about.scss";  
+@import "location/location-map.scss";  
+@import "location/location-infro.scss";  
 
 
 

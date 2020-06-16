@@ -113,41 +113,38 @@ flex: 0 1 100%;
 
 
 
-// .container-photo{
+.container-photo{
 
-// .slick-dots {
-//   padding-inline-start: 0px !important;
-//   position: absolute;
-//   width: 16%;     
-//   background: red;
-//   top: 17%; 
-//   left: 62%;       
-//   // transform: translate(5%, -12px);
-//   // left: 0px;
-//   @include jucc();
-//   z-index: 20; 
-//   @media screen and (max-width: 1200px) {
-//     width: 20%;  
-//   }
-//   @media screen and (max-width: 900px) {
-//     left: 0;
-//   }
-// }
+.slick-dots {
+  padding-inline-start: 0px !important;
+  position: absolute;
+  width: 16%;     
+  top: 17%; 
+  left: 62%;       
+  @include jucc();
+  z-index: 20; 
+  @media screen and (max-width: 1200px) {
+    width: 20%;  
+  }
+  @media screen and (max-width: 900px) {
+    left: 0;
+  }
+}
 
-// .slick-dots li button {
-//   list-style: none;
-//   margin: 0px 10px 0px 10px;
-//   background: $color3; 
-//   color: transparent; 
-//   text-align: center;
-//   border-radius: 50%;
-//   width: 10px;height: 10px;
-// }
-// .slick-dots li.slick-active {
-//   position: relative;
-//   button {
-//     color: transparent;
-//     background: $color1;
-//   }
-// }
-// }
+.slick-dots li button {
+  list-style: none;
+  margin: 0px 10px 0px 10px;
+  background: $color3; 
+  color: transparent; 
+  text-align: center;
+  border-radius: 50%;
+  width: 10px;height: 10px;
+}
+.slick-dots li.slick-active {
+  position: relative;
+  button {
+    color: transparent;
+    background: $color1;
+  }
+}
+}

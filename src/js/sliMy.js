@@ -1,28 +1,20 @@
 $(Document).ready(function () {
   $(".slider-top-js").slick({
     arrows: true,
-
     slidesToShow: 1,
     slideToscroll: 1,
     speed: 800,
-    // adapitveHeight: true,
-    // rows: 1,
     nextArrow: $(".arrows-slider-top__arrow_prev"),
     prevArrow: $(".arrows-slider-top__arrow_next"),
     responsive: [
       {
         breakpoint: 960,
         settings: {
-          // arrows: false,
-
-          slidesToShow: 1,
         },
       },
       {
         breakpoint: 620,
         settings: {
-          // arrows: false,
-          // centerPadding: "40px",
           slidesToShow: 1,
         },
       },
@@ -66,7 +58,6 @@ $(Document).ready(function () {
     arrows: true,
     dots: false,
     slidesToShow: 1,
-    // infinite: false,
     slideToscroll: 1,
     speed: 800,
     easing: "ease",
@@ -78,16 +69,12 @@ $(Document).ready(function () {
       {
         breakpoint: 819,
         settings: {
-          // arrows: false,
-
           slidesToShow: 2,
         },
       },
       {
         breakpoint: 620,
         settings: {
-          // arrows: false,
-          // centerPadding: "40px",
           slidesToShow: 1,
         },
       },
@@ -103,13 +90,10 @@ $(Document).ready(function () {
     arrows: true,
     dots: false,
     slidesToShow: 2,
-    // infinite: false,
     slideToscroll: 1,
     speed: 800,
     easing: "ease",
-    // fade: true,
     cssEase: 'linear',
-    // rows: 1,
     nextArrow: $(".arrow-saf_next"),
     prevArrow: $(".arrow-saf_prev"),
     responsive: [
@@ -117,8 +101,6 @@ $(Document).ready(function () {
         breakpoint: 819,
         settings: {
           arrows: false,
-          // centerMode: true,
-          // centerPadding: "40px",
           slidesToShow: 1,
         },
       },
@@ -126,8 +108,6 @@ $(Document).ready(function () {
         breakpoint: 480,
         settings: {
           arrows: false,
-
-          // centerPadding: "40px",
           slidesToShow: 1,
         },
       },
@@ -139,13 +119,10 @@ $(Document).ready(function () {
     arrows: true,
     dots: false,
     slidesToShow: 3,
-    // infinite: false,
     slideToscroll: 1,
     speed: 800,
     easing: "ease",
-    // fade: true,
     cssEase: 'linear',
-    // rows: 1,
     nextArrow: $(".arrows-slider-news__arrow_next"),
     prevArrow: $(".arrows-slider-news__arrow_prev"),
     responsive: [
@@ -153,8 +130,6 @@ $(Document).ready(function () {
         breakpoint: 1100,
         settings: {
           arrows: false,
-          // centerMode: true,
-          // centerPadding: "40px",
           slidesToShow: 2,
         },
       },
@@ -162,8 +137,6 @@ $(Document).ready(function () {
         breakpoint: 840, 
         settings: {
           arrows: false,
-
-          // centerPadding: "40px",
           slidesToShow: 1,
         },
       },
@@ -208,13 +181,10 @@ $(Document).ready(function () {
     arrows: true,
     dots: false,
     slidesToShow: 3,
-    // infinite: false,
     slideToscroll: 1,
     speed: 800,
     easing: "ease",
-    // fade: true,
     cssEase: 'linear',
-    // rows: 1,
     nextArrow: $(".arrows-slider-bild__arrow_next"),
     prevArrow: $(".arrows-slider-bild__arrow_prev"),
     responsive: [
@@ -222,8 +192,6 @@ $(Document).ready(function () {
         breakpoint: 1100,
         settings: {
           arrows: false,
-          // centerMode: true,
-          // centerPadding: "40px",
           slidesToShow: 2,
         },
       },
@@ -231,8 +199,6 @@ $(Document).ready(function () {
         breakpoint: 840,
         settings: {
           arrows: false,
-
-          // centerPadding: "40px",
           slidesToShow: 1,
         },
       },
@@ -244,35 +210,12 @@ $(Document).ready(function () {
     arrows: true,
     dots: true,
     slidesToShow: 1,
-    // infinite: false,
     slideToscroll: 1,
     speed: 800,
     easing: "ease",
-    // fade: true,
     cssEase: 'linear',
-    // rows: 1,
     nextArrow: $(".arrows-nearhome__arrow_next"),
     prevArrow: $(".arrows-nearhome__arrow_prev"),
-    responsive: [
-      {
-        breakpoint: 1100,
-        settings: {
-          arrows: false,
-          // centerMode: true,
-          // centerPadding: "40px",
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 840,
-        settings: {
-          arrows: false,
-
-          // centerPadding: "40px",
-          slidesToShow: 1,
-        },
-      },
-    ],
   });
 });
 $(Document).ready(function () {
@@ -280,35 +223,12 @@ $(Document).ready(function () {
     arrows: true,
     dots: true,
     slidesToShow: 1,
-    // infinite: false,
     slideToscroll: 1,
     speed: 800,
     easing: "ease",
-    // fade: true,
     cssEase: 'linear',
-    // rows: 1,
     nextArrow: $(".arrows-children__arrow_next"),
     prevArrow: $(".arrows-children__arrow_prev"),
-    responsive: [
-      {
-        breakpoint: 1100,
-        settings: {
-          arrows: false,
-          // centerMode: true,
-          // centerPadding: "40px",
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 840,
-        settings: {
-          arrows: false,
-
-          // centerPadding: "40px",
-          slidesToShow: 1,
-        },
-      },
-    ],
   });
 });
 $(Document).ready(function () {
@@ -316,35 +236,12 @@ $(Document).ready(function () {
     arrows: true,
     dots: true,
     slidesToShow: 1,
-    // infinite: false,
     slideToscroll: 1,
     speed: 800,
     easing: "ease",
-    // fade: true,
     cssEase: 'linear',
-    // rows: 1,
     nextArrow: $(".arrows-parking__arrow_next"),
     prevArrow: $(".arrows-parking__arrow_prev"),
-    responsive: [
-      {
-        breakpoint: 1100,
-        settings: {
-          arrows: false,
-          // centerMode: true,
-          // centerPadding: "40px",
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 840,
-        settings: {
-          arrows: false,
-
-          // centerPadding: "40px",
-          slidesToShow: 1,
-        },
-      },
-    ],
   });
 });
 $(Document).ready(function () {
@@ -352,35 +249,13 @@ $(Document).ready(function () {
     arrows: true,
     dots: true,
     slidesToShow: 1,
-    // infinite: false,
     slideToscroll: 1,
     speed: 800,
     easing: "ease",
-    // fade: true,
     cssEase: 'linear',
-    // rows: 1,
     nextArrow: $(".arrows-tradition__arrow_next"),
     prevArrow: $(".arrows-tradition__arrow_prev"),
-    responsive: [
-      {
-        breakpoint: 1100,
-        settings: {
-          arrows: false,
-          // centerMode: true,
-          // centerPadding: "40px",
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 840,
-        settings: {
-          arrows: false,
-
-          // centerPadding: "40px",
-          slidesToShow: 1,
-        },
-      },
-    ],
+  
   });
 });
 $(Document).ready(function () {
@@ -388,34 +263,12 @@ $(Document).ready(function () {
     arrows: true,
     dots: true,
     slidesToShow: 1,
-    // infinite: false,
     slideToscroll: 1,
     speed: 800,
     easing: "ease",
-    // fade: true,
     cssEase: 'linear',
-    // rows: 1,
     nextArrow: $(".arrows-slider-photo__arrow_next"),
     prevArrow: $(".arrows-slider-photo__arrow_prev"),
-    responsive: [
-      {
-        breakpoint: 1100,
-        settings: {
-          arrows: false,
-          // centerMode: true,
-          // centerPadding: "40px",
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 840,
-        settings: {
-          arrows: false,
 
-          // centerPadding: "40px",
-          slidesToShow: 1,
-        },
-      },
-    ],
   });
 });
