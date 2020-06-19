@@ -5,6 +5,8 @@
     padding: 2% 0% 2% 4.2%;
     @include jucs();
     @include alic();
+    width: 100%;
+    height: 100%; 
     @media screen and (max-width: 1310px) {
       @include jucb();
       padding: 2% 4% 2% 4%;

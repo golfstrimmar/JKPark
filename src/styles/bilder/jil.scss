@@ -1,0 +1,37 @@
+.jil {
+		&__body {
+      @include alic();
+		}
+
+		&__title {
+      @include Text-Style-160;
+		}
+
+		&__text {
+      @include jucs();
+      padding: 2% 0% 0% 0%;
+      p{
+        @include Text-Style-122;
+        flex: 0 1 80%;
+      }
+		}
+		&__logo {
+      flex: 0 1 14%; 
+		}
+
+		&__img {
+      position: relative;
+      width: 95%;
+     padding: 0% 0% 50% 0%; 
+		}
+
+		&__text-low {
+      @include jucb();
+      padding: 2% 0% 0% 0%;
+      p {
+        flex: 0 1 48%;
+        @include Text-Style-122;
+      }
+		}
+}
+

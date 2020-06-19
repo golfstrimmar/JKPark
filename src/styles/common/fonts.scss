@@ -267,7 +267,14 @@ line-height: 18px;
 text-align: right;
 color: #252D34;
 };
-
+@mixin Text-Style-170{
+font-family: ubantu;  
+font-style: normal;
+font-weight: normal;
+font-size: 17px;
+line-height: 26px;
+color: #FFFFFF;
+};
 
 
 // ------------Gotham Pro------------------
@@ -523,7 +530,14 @@ line-height: 110.7%;
 color: #FFFFFF;
 };
 
-
+@mixin Text-Style-171{
+font-family: Gotham Pro;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 25px;  
+color: #FFFFFF;
+};
 
 
 @mixin Text-Style-101{
@@ -650,6 +664,16 @@ font-size: 11px;
 line-height: 11px;
 // text-transform: uppercase; 
 };
+
+@mixin Text-Style-160{
+font-family: Gotham Pro;
+font-style: normal;
+font-weight: 500;
+font-size: 42px;
+line-height: 63px;
+color: #282828;
+};
+
 // =========================================================================
 @font-face {
   font-family: icomoon;

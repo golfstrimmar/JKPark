@@ -161,9 +161,12 @@ gulp.task("clean", function () {
 gulp.task("scripts", function () {
   return (
     gulp
-      .src("./src/js/*.js", {
-        sinse: gulp.lastRun("scripts"),
-      })
+      .src("./src/js/*.js"
+      // , {
+      //   sinse: gulp.lastRun("scripts"),
+      // }
+      
+      )
       .pipe(plumber())
       .pipe(remember("scripts"))
       .pipe(concat("app.js"))

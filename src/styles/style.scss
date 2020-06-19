@@ -10,6 +10,7 @@
 @import "common/footer.scss";
 @import "common/header.scss";
 @import "common/slick.scss";
+@import "common/jquery.fancybox.scss";
 
 // @import "index/content/some-block.scss";
 @import "index/content/slider-top.scss";
@@ -34,10 +35,51 @@
 @import "location/foolscreen-location.scss";  
 @import "location/location-about.scss";  
 @import "location/location-map.scss";  
-@import "location/location-infro.scss";  
+@import "location/location-infro.scss";
+
+@import "bilder/foolscreen-bilder.scss"; 
+@import "bilder/jil.scss";  
+@import "bilder/galery.scss"; 
 
 
-
+// Bootstrap
+@import "node_modules/bootstrap/scss/_functions";
+@import "node_modules/bootstrap/scss/_variables";
+@import "node_modules/bootstrap/scss/_mixins";
+@import "node_modules/bootstrap/scss/_root";
+@import "node_modules/bootstrap/scss/_reboot";
+@import "node_modules/bootstrap/scss/_type";
+@import "node_modules/bootstrap/scss/_images";
+@import "node_modules/bootstrap/scss/_code";
+@import "node_modules/bootstrap/scss/_grid";
+@import "node_modules/bootstrap/scss/_tables";
+@import "node_modules/bootstrap/scss/_forms";
+@import "node_modules/bootstrap/scss/_buttons";
+@import "node_modules/bootstrap/scss/_transitions";
+@import "node_modules/bootstrap/scss/_dropdown";
+@import "node_modules/bootstrap/scss/_button-group";
+@import "node_modules/bootstrap/scss/_input-group";
+@import "node_modules/bootstrap/scss/_custom-forms";
+@import "node_modules/bootstrap/scss/_nav";
+@import "node_modules/bootstrap/scss/_navbar";
+@import "node_modules/bootstrap/scss/_card";
+@import "node_modules/bootstrap/scss/_breadcrumb";
+@import "node_modules/bootstrap/scss/_pagination";
+@import "node_modules/bootstrap/scss/_badge";
+@import "node_modules/bootstrap/scss/_jumbotron";
+@import "node_modules/bootstrap/scss/_alert";
+@import "node_modules/bootstrap/scss/_progress";
+@import "node_modules/bootstrap/scss/_media";
+@import "node_modules/bootstrap/scss/_list-group";
+@import "node_modules/bootstrap/scss/_close";
+@import "node_modules/bootstrap/scss/_toasts";
+@import "node_modules/bootstrap/scss/_modal";
+@import "node_modules/bootstrap/scss/_tooltip";
+@import "node_modules/bootstrap/scss/_popover";
+@import "node_modules/bootstrap/scss/_carousel";
+@import "node_modules/bootstrap/scss/_spinners";
+@import "node_modules/bootstrap/scss/_utilities";
+@import "node_modules/bootstrap/scss/_print";
 
 // body{ background-color: #FF9419;}
 .wrapper {
@@ -64,7 +106,12 @@
   max-width: 88%; 
   margin: 0% 0% 0% 12%;    
 }
- 
+.container-jil{
+  max-width: 91.66666%;
+  margin: 0 auto;
+   outline: 1px solid #4164ff;
+
+} 
 .ibg {
   background-repeat: no-repeat;
   background-size: cover;  
@@ -85,6 +132,7 @@ a {
   // @include center(); 
   width: 100%;
   height: 100%;
+  text-decoration: none !important;  
   &:hover {
     cursor: pointer;
     z-index: 5;
@@ -95,7 +143,16 @@ a {
   width: 30px;
   height: 30px;
 }
-
+ .img-bg{
+    position: absolute;
+    background: #000000;
+    opacity: 0.36; 
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+   
+  }
 .lock {
   overflow: hidden;
 }
@@ -106,7 +163,7 @@ a {
 .active{
   opacity: 1;
 visibility: visible;
-
+display: flex;  
  }
 
 .content-about{

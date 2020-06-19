@@ -12,6 +12,9 @@ $(Document).ready(function () {
 });
 
 
+
+
+
 $(Document).ready(function () {
   $(".icon-side").click(function (event) {
     $(this).toggleClass("side-menu-icon-active"),
@@ -21,11 +24,12 @@ $(Document).ready(function () {
   });
 });
 
-
-
-
-
-
+$(Document).ready(function () {
+  $(".galery__button").click(function (event) {
+    $('.galery__img_hidden').toggleClass("active")
+    
+  });
+});
 
 function ibg() {
   $.each($('.ibg'), function (index, val) {
@@ -34,7 +38,6 @@ function ibg() {
     }
   });
 }
-
 ibg();
 
 //  alert('hhhhh');
