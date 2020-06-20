@@ -9,6 +9,10 @@
       height: 100%;
       @include jucb();
       position: relative;
+      padding: 5% 0% 0% 0%; 
+    @media screen and (max-width:  1000px) { 
+       @include jucc();  
+      } 
    }
 		&__img {
       position: relative;
@@ -17,6 +21,11 @@
       flex: 0 1 49%; 
       padding: 0% 0% 28% 0%;    
       margin: 0% 0% 2% 0%;
+       @media screen and (max-width:  1000px) {
+         flex: 0 1 80%;
+         padding: 0% 0% 40% 0%; 
+          margin: 0% 0% 2% 0%;    
+         } 
       &_hidden{
       display: none; 
       }
@@ -42,10 +51,19 @@ width: 40%;
 height: 20%;   
 top: 50%;
 left: 9%; 
+@media screen and (max-width:  1350px) {
+   width: 80%;   
+   } 
+@media screen and (max-width:  1000px) {  
+   font-size: 14px; } 
+ @media screen and (max-width:  500px) {top: 20%;   }   
+   
 &_small{ 
 top: 75%; 
 width: 60%; 
 @include Text-Style-171; 
+@media screen and (max-width:  1350px) {width: 100%; }
+@media screen and (max-width:  1000px) { font-size: 20px; }    
 }
 }
 &__button{
@@ -65,7 +83,3 @@ border-radius: 60px;
 .button-main-white__body{cursor: pointer;} 
   }  
 
-.modal-window{
-   display: none;
-   width: 30%;   
-}

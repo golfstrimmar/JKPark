@@ -15,16 +15,17 @@ position: relative;
 @include Text-Style-6;
 line-height: 1;
 z-index: 2;
-@media screen and (max-width:  500px) {  font-size: 30px; }  
+@media screen and (max-width:  800px) {  font-size: 30px; }  
 }
 
 &__text{
 width: 70%;  
 position: relative;
-z-index: 2;
+z-index: 1;
 @include Text-Style-7;
-line-height: 1;
+line-height: 1.5;
 padding: 5% 0% 0% 0%;
+@media screen and (max-width:  800px) {  font-size: 20px; } 
 }
 
 }

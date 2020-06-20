@@ -1,18 +1,38 @@
 .jil {
 		&__body {
       @include alic();
-		}
+      @media screen and (max-width:  800px) {
+   padding: 0% 2% 0% 3%;
+   } 
+      @media screen and (max-width:  400px) { 
+         padding: 0% 5% 0% 3%;
+        } 
+}
 
 		&__title {
       @include Text-Style-160;
-		}
+      padding: 0% 0% 2% 0%;
+@media screen and (max-width:  800px) {
+    font-size: 20px; 
+   line-height: 1.5;
+    padding: 0% 0% 5% 0%;  
+   } 
+       	
+
+}
 
 		&__text {
       @include jucs();
-      padding: 2% 0% 0% 0%;
+       
       p{
-        @include Text-Style-122;
+        @include Text-Style-122; 
         flex: 0 1 80%;
+        @media screen and (max-width:  1300px) { 
+           padding: 0% 0% 0% 3%;
+          } 
+          @media screen and (max-width: 800px) { 
+            padding: 5% 0% 0% 0%;
+            } 
       }
 		}
 		&__logo {
@@ -23,6 +43,7 @@
       position: relative;
       width: 95%;
      padding: 0% 0% 50% 0%; 
+     margin: 5% 0% 0% 0%;
 		}
 
 		&__text-low {
