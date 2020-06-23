@@ -1,0 +1,337 @@
+@import "common/mixins";
+@import "common/variables";
+@import "common/fonts";
+
+// .wayscommerce {
+//   &__body {
+//     @include jucs();
+//     width: 100%;
+//     height: 100%;
+//     padding: 4% 0% 0% 0%;
+//   }
+
+//   &__container {
+//     width: 92%;
+//     margin: 0 auto;
+//   }
+
+//   &__arrow {
+//     @include jucs();
+//     flex: 0 1 100%;
+//     @include alic();
+
+//     span {
+//       display: block;
+//       @include Text-Style-172;
+//       margin-left: 17px;
+//       line-height: 1;
+//       @include anim(0.2s);
+//     }
+//     &:hover {
+//       span {
+//         color: $color4;
+//       }
+//     }
+//   }
+
+//   .svg-ways {
+//     width: 17px;
+//     height: 14px;
+//   }
+
+//   &__title {
+//     @include Text-Style-173;
+//   }
+
+//   &__block {
+//     flex: 0 1 100%;
+//     margin: 50px 0px 0px 0px;
+//     width: 100%;
+//     height: 360px;
+//     @media screen and (max-width: 450px) {
+//       height: 450px;
+//     }
+//     @media screen and (max-width: 400px) {
+//       height: 500px;
+//     }
+//   }
+// }
+
+// .wayscommerce-block {
+//   &__body {
+//     width: 100%;
+//     height: 100%;
+//     position: relative;
+//     padding: 3% 2% 5% 4.3%;
+//     @include jucs();
+//   }
+
+//   &__fon {
+//     position: relative;
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     top: 0%;
+//     left: 0%;
+//   }
+
+//   &__title {
+//     @include Text-Style-174;
+//     position: relative;
+//     z-index: 2;
+//     flex: 0 1 100%;
+//     @media screen and (max-width: 800px) {
+//       font-size: 30px;
+//     }
+//   }
+
+//   &__text {
+//     @include Text-Style-175;
+//     position: relative;
+//     z-index: 2;
+//     padding: 2% 0% 0% 0%;
+//     flex: 0 1 45%;
+//     @media screen and (max-width: 800px) {
+//       font-size: 14px;
+//       flex: 0 1 90%;
+//     }
+//     &_long {
+//       flex: 0 1 100%;
+//     }
+//     &_long1 {
+//       flex: 0 1 90%;
+//     }
+//   }
+
+//   &__button {
+//     .button-main__body {
+//       width: 211px;
+//       height: 48px;
+//       margin: 2.5% 0% 0% 0%;
+//       @media screen and (max-width: 450px) {
+//         .button-main__link span {
+//           font-size: 10px;
+//         }
+//       }
+//       &_long {
+//         width: 328px;
+//         @media screen and (max-width: 450px) {
+//           width: 250px;
+//         }
+//       }
+//       &_short {
+//         width: 130px;
+//       }
+//     }
+//   }
+// }
+// // --------------акции-----------------
+
+// .actions {
+//   .wayscommerce {
+//     &__body {
+//       @include jucb();
+//     }
+//     &__title {
+//       flex: 0 1 100%;
+//     }
+//     &__block {
+//       flex: 0 1 48.7%;
+//       margin: 50px 0px 0px 0px;
+//       height: 237px;
+//       @media screen and (max-width:  800px) { flex: 0 1 100%;  }  
+//       @media screen and (max-width: 450px) {
+//         height: 450px;
+        
+//       }
+//       @media screen and (max-width: 400px) {
+//         height: 500px;
+//       }
+//     }
+//   }
+
+//   .wayscommerce-block {
+//     &__body {
+//       @include jucb();
+//     }
+
+//     &__title {
+//       font-size: 24px;
+//       @media screen and (max-width: 800px) {
+//         font-size: 12px;
+//       }
+//     }
+
+//     &__text {
+//       @include Text-Style-177;
+//       flex: 0 1 90%;
+//       font-size: 10px;
+//       @media screen and (max-width: 800px) {
+//         font-size: 10px;
+//         flex: 0 1 90%;
+//       }
+//       &_long {
+//         flex: 0 1 100%;
+//       }
+//       &_long1 {
+//         flex: 0 1 90%;
+//       }
+//     }
+
+//     &__button {
+//       z-index: 2;
+//       @include Text-Style-177;
+//       padding: 0% 0% 0% 0%;    
+//       position: relative;
+//       line-height: 1;
+//       height: 5%;
+//       width: 15%;   
+//       @include anim(0.2s);
+//       @media screen and (max-width:  800px) { width: 50%;  height: 1%;  }  
+//       &:hover {
+//         color: $color1;
+//         &:after {
+//           border-bottom: 1px solid $color1;
+//           border-right: 1px solid $color1;
+//         }
+//       }
+//       &:after {
+//         content: "";
+//         position: absolute;
+//         width: 5px;
+//         height: 5px;
+//         z-index: 2;
+//         border-bottom: 1px solid $color5;
+//         border-right: 1px solid $color5;
+//         top: 50%;
+//         left: 70px;
+//         right: 0%;
+//         transform: translate(0%, -20%)  rotate(-45deg);
+//         @include anim(0.2s);
+//       }
+//     }
+//   }
+// }
+
+
+// --------contacts-----------
+
+.contacts {
+  &__body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 4% 0% 40% 4.5%;
+  }
+
+  &__arrow {
+    position: relative;
+    z-index: 2;
+  }
+  &__title {
+    font-family: Gotham Pro;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 74px;
+    color: #282828;
+    position: relative;
+    z-index: 2;
+  }
+  &__buttons {
+    @include jucs();
+    padding: 4% 0% 0% 0%;
+
+    .button-main,
+    .button-main-white {
+      flex: 0 1 16%;
+    }
+    .button-main-white__body {
+      background: transparent;
+    }
+    .button-main__body {
+      background: linear-gradient(90deg, #725e55 0%, #88563f 100%);
+      border-radius: 43px;
+      height: 43px;
+      width: 198px;
+    }
+  }
+
+  &__plaza {
+  }
+
+  .marker {
+    width: 46px;
+    height: 46px;
+    background: linear-gradient(90deg, #725e55 0%, #88563f 100%);
+    border-radius: 50%;
+    position: relative;
+    position: absolute;
+    z-index: 500;
+    top: 50%;
+    left: 60%;
+    img {
+      position: absolute;
+      z-index: 2;
+      width: 70%;
+      height: 70%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .contacts-plaza {
+    &__body {
+      position: absolute;
+      background-color: $color10;
+      z-index: 5;
+      width: 36%;
+      height: 42%;
+      top: 44%;
+      left: 10%;
+      padding: 4% 0% 0% 4%;
+    }
+
+    .text1 {
+      @include Text-Style-11;
+      text-align: left;
+    }
+    .text2 {
+      @include Text-Style-11;
+      text-align: left;
+    }
+    .text3 {
+      @include Text-Style-12;
+      text-align: left;
+      padding: 5% 0% 0% 0%;
+    }
+    .text4 {
+      @include Text-Style-13;
+      text-align: left;
+      padding: 5% 0% 0% 0%;
+    }
+
+    .button-main-white {
+      padding: 5% 0% 0% 0%;
+    }
+    .social-nav-footer__body {
+      padding: 8% 0% 0% 0%;
+      @include jucs();
+      &__body {
+        flex: 0 1 100%;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

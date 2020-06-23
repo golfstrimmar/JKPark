@@ -1,0 +1,58 @@
+@import "common/mixins";
+@import "common/variables";
+.header-white {
+  .fon-header {
+    background: #ffffff;
+    //  background: blue;
+    box-shadow: 0px 0px 40px rgba(1, 56, 120, 0.14);
+  }
+  .header {
+    &__phone {
+      flex: 0 1 14%;
+      margin: 0% 0% 0% 0%;
+      @media screen and (max-width: 1390px) {
+        flex: 0 1 30%;
+        margin: 0% 0% 0% 2%;
+      }
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+
+    &__link {
+      span {
+        color: $color8;
+      }
+    }
+  }
+
+  .menu li p {
+    color: $color8;
+  }
+
+  .menu li:hover p {
+    color: $color1;
+  }
+
+  .phone-header {
+    &__text {
+      color: $color8;
+    }
+    &__link {
+      span {
+        color: $color8;
+      }
+    }
+    &__link:hover span {
+      color: $color1;
+    }
+  }
+
+  .header__burger {
+    @include anim(0.3s);
+
+    span {
+      background-color: $color1;
+    }
+  }
+}

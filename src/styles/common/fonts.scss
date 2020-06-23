@@ -228,8 +228,14 @@ line-height: 58px;
 color: $color5; 
 };
 
-
-
+@mixin Text-Style-172{
+font-family: OpenSans;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 74px;
+color: $color1;
+}
 // =----------------------ubantu;-----------------------------
 @mixin Text-Style-31 {
 font-family: ubantu;
@@ -273,6 +279,25 @@ font-style: normal;
 font-weight: normal;
 font-size: 17px;
 line-height: 26px;
+color: #FFFFFF;
+};
+
+@mixin Text-Style-175{
+font-family: ubantu;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 26px;
+color: #FFFFFF;
+};
+
+@mixin Text-Style-177{
+font-family: Gotham Pro;
+font-style: normal;
+font-weight: bold;
+font-size: 10px; 
+line-height: 1.5;
+letter-spacing: 0.08em;
 color: #FFFFFF;
 };
 
@@ -673,6 +698,63 @@ font-size: 42px;
 line-height: 63px;
 color: #282828;
 };
+
+@mixin Text-Style-173{
+font-family: Gotham Pro;
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 74px;
+color: #282828;
+};
+
+@mixin Text-Style-174{
+font-family: Gotham Pro;
+font-style: normal;
+font-weight: 500;
+font-size: 42px;
+line-height: 40px;
+color: #FFFFFF;
+};
+
+
+
+
+  @mixin Text-Style-180{
+      font-family: Gotham Pro;
+font-style: normal;
+font-weight: 500;
+font-size: 21px;
+line-height: 20px;
+letter-spacing: 0.02em;
+color: #252D34;
+  }
+
+
+
+    @mixin Text-Style-182{
+          font-family: OpenSans;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 16px;
+letter-spacing: 0.02em;
+color: #696E73;
+    }
+
+  @mixin Text-Style-183{
+  font-family: OpenSans;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 176.16%;
+letter-spacing: 0.02em;
+color: #252D34;
+  };
+
+
+
+
 
 // =========================================================================
 @font-face {

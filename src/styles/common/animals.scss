@@ -50,4 +50,33 @@
   }
 }
 
+.return-green{
+   @include jucs();
+   @include alic(); 
+    flex: 0 1 100%;
+  span {
+      display: block;
+      @include Text-Style-172;
+      margin-left: 17px;
+      line-height: 1;
+      @include anim(0.2s);
+    }
+    &:hover {
+      span {
+        color: $color4;
+      }
+    }
+}
+
+.social-nav-footer {  
+  &__body {
+ @include juce();  
+  }
+  &__icon {
+    flex: 0 1 30px; 
+  }
+}
+
+
+
 

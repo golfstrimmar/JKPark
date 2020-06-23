@@ -145,6 +145,7 @@ opacity: 0.59;
       height: 100%;
       display: block;
       @include Text-Style-4;
+      line-height: 1.5;
       border-bottom: 2px dotted;
     }
   }
@@ -239,7 +240,7 @@ width:200px;
 .active-sidebar{
 left: 0%;
 }
-// --------------burger---------------------------
+// ------------sidebar--burger---------------------------
 
 
 
